@@ -729,3 +729,71 @@ main{position:relative;z-index:1}
     box-shadow:0 8px 25px rgba(3,62,62,.08) !important;
   }
 }
+
+
+/* =========================================================
+   PASS 10.1 — GENERAL MEDICINE POLISH
+   ========================================================= */
+.general-trust-strip{
+  background:var(--deep);
+  color:#fff;
+}
+.general-trust-strip .container{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+.general-trust-strip .container>div{
+  min-height:92px;
+  padding:22px 26px;
+  border-right:1px solid rgba(255,255,255,.12);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.general-trust-strip .container>div:first-child{padding-left:0}
+.general-trust-strip .container>div:last-child{
+  border-right:0;
+  color:var(--lime);
+}
+.general-trust-strip strong{
+  font:800 22px Manrope;
+  letter-spacing:-.04em;
+}
+.general-trust-strip span{
+  font-size:8px;
+  color:#b8cfca;
+  margin-top:5px;
+}
+.general-medicine-page .detail-overview{
+  background:#fff;
+}
+.general-medicine-page .treatment-grid article:first-child{
+  background:var(--deep);
+  color:#fff;
+}
+.general-medicine-page .treatment-grid article:first-child p{
+  color:#b8cfca;
+}
+.general-medicine-page .treatment-grid article:first-child span{
+  color:var(--lime);
+}
+.general-medicine-page .related-services{
+  background:#f4f8f6;
+}
+@media(max-width:850px){
+  .general-trust-strip .container{grid-template-columns:1fr 1fr}
+  .general-trust-strip .container>div:nth-child(2){border-right:0}
+  .general-trust-strip .container>div:nth-child(3),
+  .general-trust-strip .container>div:nth-child(4){
+    border-top:1px solid rgba(255,255,255,.12);
+  }
+}
+@media(max-width:650px){
+  .general-trust-strip .container{grid-template-columns:1fr 1fr}
+  .general-trust-strip .container>div{
+    min-height:78px;
+    padding:16px;
+  }
+  .general-trust-strip .container>div:first-child{padding-left:16px}
+  .general-trust-strip strong{font-size:18px}
+}

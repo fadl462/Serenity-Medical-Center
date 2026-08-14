@@ -58,3 +58,7 @@ Rebuilt the first service-detail page with service overview, common visit reason
 
 ## Pass 09.2 — Services header / scroll QA
 Stabilised the sticky navigation behaviour so the Services page header remains consistent while scrolling without introducing duplicate visual layers or layout spacers.
+
+
+## Pass 10.1 — General Medicine polish
+Added a compact service trust strip, strengthened the first treatment card, refined section contrast, and preserved responsive behaviour and active service navigation.
