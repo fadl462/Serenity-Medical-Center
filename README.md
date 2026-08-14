@@ -30,3 +30,7 @@ The website does not misrepresent third-party stock photography as official Sere
 
 ## Pass 06 QA
 Global page-hero alignment, content-grid consistency, overflow protection, and automatic active navigation states were added across all pages. Service detail pages highlight Services; the community article highlights Community; Contact highlights Book a Visit.
+
+
+## Pass 07 — Homepage
+Homepage refined for hierarchy, factual restraint, stronger visual rhythm, and cleaner conversion flow. Publicly sourced facts are used for Serenity's 2020 establishment, 24/7 operation, Damas location, patient-centered positioning and published service areas.

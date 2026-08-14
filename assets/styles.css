@@ -197,3 +197,67 @@ main{width:100%}
   .nav a.active:not(.nav-cta){background:var(--mint);border-radius:9px;padding-left:12px}
   .nav a.nav-cta.active{background:var(--lime)}
 }
+
+
+/* =========================================================
+   PASS 07 — HOMEPAGE VISUAL REFINEMENT
+   ========================================================= */
+.home-hero{min-height:690px}
+.home-hero .hero-image{background-position:center 46%}
+.home-hero .hero-overlay{background:linear-gradient(90deg,rgba(3,47,47,.94) 0%,rgba(3,47,47,.72) 40%,rgba(3,47,47,.20) 78%,rgba(3,47,47,.04))}
+.home-hero .hero-content{padding-top:110px;padding-bottom:90px}
+.hero-side-label{
+  position:absolute;right:28px;top:50%;transform:rotate(90deg) translateX(50%);
+  transform-origin:right center;font-size:8px;letter-spacing:.25em;font-weight:800;color:rgba(255,255,255,.55);z-index:3
+}
+.hero-location{display:flex;align-items:center;gap:12px;margin-top:42px}
+.hero-location-mark{width:31px;height:31px;border-radius:10px;background:var(--lime);color:var(--deep);display:grid;place-items:center;font-weight:900}
+.hero-location strong,.hero-location small{display:block}
+.hero-location strong{font-size:10px}.hero-location small{font-size:8px;color:#c6d7d3}
+.hero-location a{font-size:9px;color:var(--lime);font-weight:800;margin-left:14px}
+.home-proof .proof-grid>div:last-child{border-right:0}
+.intro-home{padding-bottom:95px}
+.intro-home-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end}
+.intro-home-copy{padding-bottom:4px}
+.care-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:58px}
+.care-pillars article{border:1px solid var(--line);border-radius:20px;padding:24px;min-height:200px;background:#fff}
+.care-pillars article:nth-child(1){background:var(--deep);color:#fff}
+.care-pillars article:nth-child(2){background:#f4f8f6}
+.care-pillars article:nth-child(3){background:var(--lime)}
+.care-pillars span{font-size:9px;font-weight:800;color:var(--teal)}
+.care-pillars article:nth-child(1) span{color:var(--lime)}
+.care-pillars h3{font:800 23px Manrope;margin:62px 0 7px}
+.care-pillars p{font-size:10px;line-height:1.55;margin:0;color:var(--muted)}
+.care-pillars article:nth-child(1) p{color:#b8ceca}
+.care-pillars article:nth-child(3) p{color:#33534e}
+.services-home .section-head{margin-bottom:34px}
+.service-feature{min-height:475px}
+.service-feature-copy{display:flex;flex-direction:column;justify-content:center}
+.service-feature-copy h3{margin:35px 0 18px;font-size:36px}
+.service-feature-copy p{max-width:430px}
+.mini-services a{min-height:150px}
+.people-home{background:#fff}
+.people-home .image-card{box-shadow:0 28px 70px rgba(5,51,51,.12)}
+.digital-home{padding-top:115px;padding-bottom:115px}
+.foundation-home .image-card{min-height:420px}
+.community-home .section-head{margin-bottom:35px}
+.cta-band{margin-top:0}
+
+@media(max-width:850px){
+  .home-hero{min-height:630px}
+  .hero-side-label{display:none}
+  .intro-home-grid{grid-template-columns:1fr;gap:20px}
+  .care-pillars{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .home-hero{min-height:620px}
+  .home-hero .hero-content{padding-top:75px;padding-bottom:60px}
+  .hero-location{margin-top:30px;flex-wrap:wrap}
+  .hero-location a{margin-left:43px}
+  .intro-home-grid{gap:8px}
+  .care-pillars{grid-template-columns:1fr;gap:8px;margin-top:35px}
+  .care-pillars article{min-height:165px}
+  .care-pillars h3{margin-top:40px}
+  .service-feature{min-height:0}
+  .service-feature-copy h3{font-size:28px}
+}
