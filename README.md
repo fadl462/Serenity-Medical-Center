@@ -18,3 +18,11 @@ The site deliberately does not invent private staff names, patient testimonials,
 
 ## Deployment
 Upload the project contents to a GitHub repository and enable GitHub Pages from the main branch, root folder.
+
+
+## Facility media source
+Public Serenity Medical Center listings expose facility photographs:
+- Yes RDV: https://yesrdv.com/cm/yaounde/hopital/serenity-medical-center?placeId=ChIJsTq3J_PRixAR6Ge-JEq4WXc
+- BusinessList: https://www.businesslist.co.cm/company/140580/serenity-medical-center
+
+The website does not misrepresent third-party stock photography as official Serenity photography. Stock imagery is used for the visual concept until official original media is supplied or licensed for reuse.
