@@ -114,3 +114,86 @@
   line-height:1.5;
   color:#7e9b96;
 }
+
+
+/* =========================================================
+   PASS 06 — GLOBAL ALIGNMENT + ACTIVE NAVIGATION
+   ========================================================= */
+html,body{width:100%;overflow-x:hidden}
+main{width:100%}
+.container{max-width:1180px}
+.page-hero{
+  position:relative;
+  overflow:hidden;
+  align-items:center;
+  min-height:500px;
+}
+.page-hero.compact{min-height:430px}
+.page-hero .container{
+  width:min(1180px,calc(100% - 48px));
+  padding:75px 0;
+  position:relative;
+  z-index:3;
+}
+.page-hero h1{
+  margin:16px 0 18px;
+  max-width:760px;
+  text-wrap:balance;
+}
+.page-hero p{
+  margin:0;
+  max-width:640px;
+}
+.page-hero + .section{padding-top:82px}
+.section > .container,
+.proof-strip > .container,
+.cta-band > .container,
+.official-media > .container{
+  position:relative;
+}
+.nav a.active:not(.nav-cta){
+  color:var(--teal);
+  position:relative;
+}
+.nav a.active:not(.nav-cta)::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-9px;
+  height:2px;
+  border-radius:4px;
+  background:var(--lime);
+}
+.nav a.nav-cta.active{
+  background:var(--lime);
+  color:var(--deep)!important;
+}
+.language-switch a.active::after{display:none}
+.hero-content,.hero .container{width:min(1180px,calc(100% - 48px))}
+.service-feature-copy,
+.service-row>div,
+.platform-grid article,
+.value-grid article,
+.partner-points,
+.contact-page>div,
+.form-layout>div{
+  min-width:0;
+}
+.footer{overflow:hidden}
+
+@media(max-width:850px){
+  .page-hero .container,
+  .hero-content,.hero .container{width:calc(100% - 30px)}
+  .page-hero{min-height:460px}
+  .page-hero.compact{min-height:400px}
+}
+@media(max-width:650px){
+  .page-hero .container{padding:58px 0}
+  .page-hero,.page-hero.compact{min-height:400px}
+  .page-hero h1{font-size:45px;line-height:1}
+  .page-hero + .section{padding-top:62px}
+  .nav a.active:not(.nav-cta)::after{display:none}
+  .nav a.active:not(.nav-cta){background:var(--mint);border-radius:9px;padding-left:12px}
+  .nav a.nav-cta.active{background:var(--lime)}
+}

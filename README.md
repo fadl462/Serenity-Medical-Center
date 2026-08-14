@@ -26,3 +26,7 @@ Public Serenity Medical Center listings expose facility photographs:
 - BusinessList: https://www.businesslist.co.cm/company/140580/serenity-medical-center
 
 The website does not misrepresent third-party stock photography as official Serenity photography. Stock imagery is used for the visual concept until official original media is supplied or licensed for reuse.
+
+
+## Pass 06 QA
+Global page-hero alignment, content-grid consistency, overflow protection, and automatic active navigation states were added across all pages. Service detail pages highlight Services; the community article highlights Community; Contact highlights Book a Visit.
