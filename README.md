@@ -54,3 +54,7 @@ Replaced weak/mismatched service imagery, fixed the pharmacy service destination
 
 ## Pass 10 — General & Specialist Medicine
 Rebuilt the first service-detail page with service overview, common visit reasons, four-step consultation journey, Serenity care approach, related services and direct booking/contact actions.
+
+
+## Pass 09.2 — Services header / scroll QA
+Stabilised the sticky navigation behaviour so the Services page header remains consistent while scrolling without introducing duplicate visual layers or layout spacers.
