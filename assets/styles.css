@@ -160,3 +160,131 @@
   .footer-col strong{font-size:8px}
   .footer-bottom{font-size:7px}
 }
+
+
+/* =========================================================
+   HOMEPAGE REFINEMENT — PASS 02
+   Brand distinction + hero/header polish
+   ========================================================= */
+.hero{
+  background:
+    radial-gradient(circle at 78% 20%,rgba(183,231,126,.24),transparent 25%),
+    radial-gradient(circle at 92% 82%,rgba(12,109,104,.10),transparent 28%),
+    linear-gradient(135deg,#eef8f4 0%,#f8fbf8 56%,#e9f5ed 100%);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  width:900px;height:900px;
+  border:1px solid rgba(12,109,104,.07);
+  border-radius:50%;
+  right:-520px;bottom:-540px;
+}
+.hero-grid{position:relative;z-index:2}
+.hero-copy h1{max-width:680px}
+.hero-art{isolation:isolate}
+.hero-art .orb-one{
+  background:linear-gradient(145deg,rgba(255,255,255,.7),rgba(12,109,104,.08));
+  box-shadow:inset 0 0 80px rgba(255,255,255,.55);
+}
+.medical-card{
+  transform:rotate(-2deg);
+  transition:transform .5s ease,box-shadow .5s ease;
+}
+.medical-card:hover{transform:rotate(0) translateY(-4px);box-shadow:0 28px 80px rgba(8,44,45,.15)}
+.float-a{transform:rotate(2deg)}
+.float-b{transform:rotate(-2deg)}
+
+.section{position:relative}
+.intro{padding-top:105px;padding-bottom:105px}
+.intro-copy{max-width:820px}
+.intro-copy h2{font-size:clamp(44px,4.7vw,66px)}
+.about-cards{gap:18px}
+.about-card{box-shadow:0 10px 35px rgba(8,44,45,.045)}
+.about-card.dark{background:linear-gradient(145deg,#063f40,#0b5553)}
+.about-card.accent{background:linear-gradient(145deg,#b7e77e,#a8dc70)}
+
+.services{background:linear-gradient(180deg,#f3f8f5 0%,#edf5f1 100%)}
+.services .section-head{margin-bottom:42px}
+.service-card{border:1px solid rgba(8,44,45,.045)}
+.service-card.featured{background:linear-gradient(145deg,#063f40,#07504e)}
+.service-card h3{letter-spacing:-.025em}
+
+.stats-grid{position:relative}
+.stats-grid:before{content:"";position:absolute;left:0;right:0;top:-68px;height:1px;background:rgba(255,255,255,.08)}
+.stat strong{letter-spacing:-.06em}
+
+.specialists{padding-top:105px}
+.doctor-card{border-color:#e3ece9}
+.doctor-portrait{position:relative}
+.doctor-portrait:after{
+  content:"";
+  position:absolute;
+  width:180px;height:180px;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:50%;
+  top:35px;left:50%;
+  transform:translateX(-50%);
+}
+.doctor-portrait span{position:relative;z-index:2}
+
+.digital{
+  background:
+    radial-gradient(circle at 75% 55%,rgba(183,231,126,.12),transparent 24%),
+    linear-gradient(135deg,#eaf6f1,#f2faf7);
+}
+.ecosystem:before{border-color:#91bdb3}
+.eco-node{transition:.3s ease}
+.eco-node:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(8,44,45,.11)}
+.eco-center{background:linear-gradient(145deg,#063f40,#0a5755)}
+
+.foundation{background:#fff}
+.foundation-art{
+  background:
+    radial-gradient(circle at 50% 50%,rgba(255,255,255,.18),transparent 34%),
+    linear-gradient(145deg,#d9f0e6,#87bdb1);
+  box-shadow:0 20px 60px rgba(8,44,45,.07);
+}
+.heart{filter:drop-shadow(0 8px 18px rgba(255,255,255,.18))}
+
+.community{background:linear-gradient(180deg,#f4f8f5,#edf5f1)}
+.post-card{border:1px solid rgba(8,44,45,.045)}
+.post-art{overflow:hidden}
+.post-art:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 45%,rgba(6,63,64,.18));
+}
+.post-art span{position:relative;z-index:2}
+
+.partner-box{
+  background:
+    radial-gradient(circle at 90% 15%,rgba(183,231,126,.12),transparent 23%),
+    linear-gradient(135deg,#063f40,#07504e);
+}
+
+.contact{background:linear-gradient(135deg,#eff7f4,#eaf4f0)}
+.contact-form{box-shadow:0 24px 65px rgba(8,44,45,.09)}
+
+.map-placeholder{background:#dbeae5}
+.map-card{border:1px solid rgba(8,44,45,.06)}
+
+.footer{
+  background:
+    radial-gradient(circle at 80% 0%,rgba(12,109,104,.25),transparent 28%),
+    #052f30;
+}
+
+@media(max-width:720px){
+  .hero{padding-top:48px;padding-bottom:28px}
+  .hero:after{width:520px;height:520px;right:-390px;bottom:-330px}
+  .hero-copy h1{max-width:320px}
+  .hero-art{margin-top:8px}
+  .medical-card{transform:rotate(-1deg)}
+  .intro{padding-top:62px;padding-bottom:62px}
+  .intro-copy h2{font-size:38px}
+  .about-cards{gap:8px}
+  .services .section-head{margin-bottom:26px}
+  .specialists{padding-top:64px}
+}
