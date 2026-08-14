@@ -833,3 +833,26 @@ main{position:relative;z-index:1}
     min-height:300px !important;
   }
 }
+
+
+/* =========================================================
+   PASS 11 — MATERNAL & CHILD CARE
+   ========================================================= */
+.maternity-page .maternity-hero{min-height:520px}
+.maternity-page .maternity-trust-strip .container>div:last-child{color:var(--lime)}
+.maternity-page .treatment-grid article:first-child{
+  background:var(--deep);
+  color:#fff;
+}
+.maternity-page .treatment-grid article:first-child p{color:#b8cfca}
+.maternity-page .treatment-grid article:first-child span{color:var(--lime)}
+.maternity-page .maternity-human{background:#eef7f4}
+.maternity-page .maternity-human .image-card{
+  background-position:center;
+  background-size:cover;
+}
+.maternity-page .related-services{background:#f4f8f6}
+@media(max-width:650px){
+  .maternity-page .maternity-hero{min-height:500px}
+  .maternity-page .maternity-human .image-card{min-height:300px !important}
+}

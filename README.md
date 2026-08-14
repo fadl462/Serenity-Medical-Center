@@ -66,3 +66,7 @@ Added a compact service trust strip, strengthened the first treatment card, refi
 
 ## Pass 10.2 — General Medicine visual QA
 Replaced the mismatched surgical image in the Why Serenity section with a consultation-focused medical image and tightened responsive section alignment.
+
+
+## Pass 11 — Maternal & Child Care
+Created the second clinical service-detail page with maternal, maternity, newborn and paediatric care pathways, family-centered journey, reassurance section, related care and appointment CTAs.
