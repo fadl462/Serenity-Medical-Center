@@ -50,3 +50,7 @@ Rebuilt the Services page as a premium clinical directory with service-specific 
 
 ## Pass 09.1 — Services QA
 Replaced weak/mismatched service imagery, fixed the pharmacy service destination by adding a dedicated pharmacy/medication support detail page, and added consistent detail-page styling.
+
+
+## Pass 10 — General & Specialist Medicine
+Rebuilt the first service-detail page with service overview, common visit reasons, four-step consultation journey, Serenity care approach, related services and direct booking/contact actions.

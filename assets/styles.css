@@ -625,3 +625,68 @@ main{width:100%}
   .detail-cta .container{display:block}
   .detail-cta .btn{margin-top:25px}
 }
+
+
+/* =========================================================
+   PASS 10 — GENERAL & SPECIALIST MEDICINE
+   ========================================================= */
+.detail-hero-actions{display:flex;gap:9px;margin-top:28px}
+.detail-overview{padding-top:90px;padding-bottom:90px}
+.detail-overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end}
+.detail-overview-grid p{color:var(--muted)}
+.detail-overview-grid .lead{color:var(--teal)}
+.treatment-section{background:#f4f8f6}
+.treatment-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.treatment-grid article{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;min-height:260px}
+.treatment-grid span,.process-grid b{font-size:9px;font-weight:900;color:#0b918c}
+.treatment-grid h3{font:800 22px Manrope;line-height:1.05;margin:75px 0 10px}
+.treatment-grid p{font-size:10px;color:var(--muted);line-height:1.55;margin:0}
+.care-process{padding-top:95px;padding-bottom:95px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.process-grid>div{padding:28px 24px;border-right:1px solid var(--line);min-height:230px}
+.process-grid>div:first-child{padding-left:0}
+.process-grid>div:last-child{border-right:0}
+.process-grid h3{font:800 25px Manrope;margin:70px 0 8px}
+.process-grid p{font-size:10px;color:var(--muted);line-height:1.55}
+.detail-image-break{background:#eef7f4;padding-top:95px;padding-bottom:95px}
+.detail-image-break .image-card{min-height:470px}
+.related-services{padding-top:90px;padding-bottom:90px}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.related-grid a{border:1px solid var(--line);border-radius:19px;padding:24px;background:#fff;transition:.25s;position:relative}
+.related-grid a:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(3,62,62,.08)}
+.related-grid span,.related-grid b,.related-grid small{display:block}
+.related-grid span{font-size:8px;color:#0b918c;font-weight:900}
+.related-grid b{font:800 20px Manrope;margin-top:55px}
+.related-grid small{font-size:9px;color:var(--muted);margin-top:7px;max-width:220px}
+.related-grid a::after{content:"↗";position:absolute;right:20px;bottom:20px;color:#0b918c;font-size:17px}
+.detail-cta{background:var(--deep);color:#fff;padding:85px 0}
+.detail-cta .container{display:flex;justify-content:space-between;align-items:center;gap:50px}
+.detail-cta h2{font:800 46px Manrope;line-height:.98;letter-spacing:-.05em;margin:12px 0}
+.detail-cta h2 span{color:var(--lime)}
+.detail-cta p{color:#b8cfca;font-size:11px}
+.detail-cta-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.detail-cta-actions>a:not(.btn){font-size:10px;color:#c7dad5}
+@media(max-width:850px){
+  .detail-overview-grid{grid-template-columns:1fr;gap:25px}
+  .treatment-grid{grid-template-columns:1fr 1fr}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .process-grid>div:nth-child(2){border-right:0}
+  .process-grid>div:nth-child(3){border-top:1px solid var(--line)}
+  .process-grid>div:nth-child(4){border-top:1px solid var(--line)}
+  .related-grid{grid-template-columns:1fr}
+  .detail-cta .container{display:block}
+  .detail-cta-actions{margin-top:25px}
+}
+@media(max-width:650px){
+  .detail-hero-actions{flex-wrap:wrap}
+  .treatment-grid{grid-template-columns:1fr}
+  .treatment-grid article{min-height:190px}
+  .treatment-grid h3{margin-top:45px}
+  .process-grid{grid-template-columns:1fr}
+  .process-grid>div,
+  .process-grid>div:nth-child(2),
+  .process-grid>div:nth-child(3),
+  .process-grid>div:nth-child(4){border-right:0;border-top:1px solid var(--line)}
+  .process-grid>div:first-child{border-top:0;padding-left:0}
+  .detail-cta h2{font-size:36px}
+}
