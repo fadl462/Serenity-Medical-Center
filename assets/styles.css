@@ -294,3 +294,38 @@
    LOCALIZATION — CAMEROON
    ========================================================= */
 .contact-details strong{font-variant-numeric:tabular-nums}
+
+/* PHOTO-LED MEDICAL EXPERIENCE — PASS 04 */
+.hero-photo{position:absolute;z-index:1;width:335px;height:420px;right:72px;top:40px;border-radius:34px;overflow:hidden;box-shadow:0 28px 80px rgba(8,44,45,.16);border:7px solid rgba(255,255,255,.62)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.88)}
+.hero-art .medical-card{z-index:4;margin-top:70px;margin-left:105px;width:270px}
+.hero-art .floating-card{z-index:5}
+.service-card{overflow:hidden}
+.service-photo{height:105px;margin:-26px -26px 20px;overflow:hidden}
+.service-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.doctor-portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.facility-strip{background:#fff;padding-top:90px;padding-bottom:90px}
+.facility-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
+.facility-image{height:430px;border-radius:28px;overflow:hidden;box-shadow:0 22px 65px rgba(8,44,45,.10)}
+.facility-image img{width:100%;height:100%;object-fit:cover;display:block}
+.facility-copy h2{font:800 clamp(40px,4.4vw,60px) Manrope;letter-spacing:-.045em;line-height:1.02;margin:10px 0 20px}
+.facility-copy h2 span{color:var(--teal)}
+.facility-copy>p{font-size:15px;color:var(--muted);line-height:1.75;max-width:570px}
+.facility-meta{display:flex;gap:28px;margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}
+.facility-meta span{font-size:9px;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.facility-meta strong{font:700 16px Manrope;color:var(--ink)}
+@media(max-width:950px){.hero-photo{right:40px}.hero-art .medical-card{margin-left:70px}.facility-grid{grid-template-columns:1fr;gap:40px}}
+@media(max-width:720px){
+  .hero-art{height:400px}
+  .hero-photo{width:245px;height:300px;right:20px;top:35px;border-width:5px;border-radius:25px}
+  .hero-art .medical-card{margin-top:65px;margin-left:0;width:235px}
+  .service-photo{height:90px;margin:-19px -19px 15px}
+  .facility-strip{padding-top:60px;padding-bottom:60px}
+  .facility-grid{gap:28px}
+  .facility-image{height:270px;border-radius:20px}
+  .facility-copy h2{font-size:37px}
+  .facility-copy>p{font-size:11px}
+  .facility-meta{gap:12px;flex-wrap:wrap}
+  .facility-meta strong{font-size:12px}
+  .facility-meta span{font-size:7px}
+}

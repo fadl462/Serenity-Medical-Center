@@ -43,3 +43,8 @@ This front-end is intentionally deployable as a visual prototype. Real productio
 - Secure donation receipts
 - Partner/contact enquiry storage
 - Gallery media storage
+
+## Content and imagery note
+The website has been localized using publicly available information about Serenity Medical Center in Yaoundé, Cameroon, including its Damas/Chris Complex location, 24-hour availability, contact details, establishment year and service descriptions.
+
+High-quality medical photography is used from Unsplash-hosted image URLs for this prototype. These are editorial/stock images and are not represented as photographs of Serenity Medical Center. Public listings indicate Serenity has its own facility photos on BusinessList and Google Maps/Yes RDV, but the accessible search results did not expose stable original image URLs suitable for packaging. Replace the stock imagery with the clinic's approved photographs when those files are supplied or made available.
