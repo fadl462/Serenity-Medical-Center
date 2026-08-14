@@ -329,3 +329,36 @@
   .facility-meta strong{font-size:12px}
   .facility-meta span{font-size:7px}
 }
+
+/* =========================================================
+   CAMEROON BRAND IDENTITY + REAL FACILITY INFORMATION
+   ========================================================= */
+:root{--brand-blue:#1595df;--brand-green:#76c72c}
+.brand-logo{width:38px;height:38px;border-radius:10px;overflow:hidden;display:block;background:#fff;border:1px solid #e4ece9;flex:0 0 38px}
+.brand-logo img{width:100%;height:100%;object-fit:cover;display:block}
+.brand small{letter-spacing:.12em}
+.announcement a{font-weight:800}
+.hero .eyebrow{color:#0b7a79}
+.medical-card .wellness-ring{background:conic-gradient(var(--brand-blue) 0 270deg,#e5eeeb 270deg)}
+.medical-card .wellness-ring strong{font-size:34px;letter-spacing:-.04em}
+.medical-card .wellness-ring small{font-size:8px}
+.status-dot{background:var(--brand-green)}
+.service-photo{height:145px;margin:-26px -26px 20px;border-radius:18px 18px 0 0}
+.service-card:not(.featured) .service-photo{margin:-26px -26px 20px}
+.service-photo img{filter:saturate(.92);transition:transform .6s ease}
+.service-card:hover .service-photo img{transform:scale(1.04)}
+.featured .service-photo{border-bottom:1px solid rgba(255,255,255,.12)}
+.doctor-portrait{height:300px;position:relative}
+.doctor-portrait img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85)}
+.doctor-portrait:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(6,63,64,.28));z-index:1}
+.doctor-portrait:after{z-index:2}
+.facility-copy h2{max-width:620px}
+.map-card a{background:var(--deep);color:#fff;padding:9px 12px;border-radius:100px;margin-left:auto;white-space:nowrap}
+
+@media(max-width:720px){
+  .brand-logo{width:32px;height:32px;flex-basis:32px;border-radius:8px}
+  .brand small{font-size:5.5px;letter-spacing:.08em}
+  .service-photo,.service-card:not(.featured) .service-photo{height:115px;margin:-19px -19px 15px;border-radius:13px 13px 0 0}
+  .doctor-portrait{height:210px}
+  .map-card a{padding:7px 9px}
+}
