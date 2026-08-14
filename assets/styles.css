@@ -797,3 +797,39 @@ main{position:relative;z-index:1}
   .general-trust-strip .container>div:first-child{padding-left:16px}
   .general-trust-strip strong{font-size:18px}
 }
+
+
+/* =========================================================
+   PASS 10.2 — GENERAL MEDICINE VISUAL QA
+   ========================================================= */
+.general-medicine-page .detail-image-break .image-card{
+  background-position:center;
+  background-size:cover;
+}
+.general-medicine-page .section-head{
+  align-items:end;
+}
+.general-medicine-page .section-side-copy{
+  max-width:360px;
+  margin-bottom:4px;
+}
+.general-medicine-page .check-list{
+  display:grid;
+  gap:9px;
+  margin-top:24px;
+}
+.general-medicine-page .check-list span{
+  font-size:10px;
+  color:var(--teal);
+}
+.general-medicine-page .detail-cta{
+  margin-top:0;
+}
+@media(max-width:650px){
+  .general-medicine-page .section-side-copy{
+    max-width:none;
+  }
+  .general-medicine-page .detail-image-break .image-card{
+    min-height:300px !important;
+  }
+}

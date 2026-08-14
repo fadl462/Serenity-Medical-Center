@@ -62,3 +62,7 @@ Stabilised the sticky navigation behaviour so the Services page header remains c
 
 ## Pass 10.1 — General Medicine polish
 Added a compact service trust strip, strengthened the first treatment card, refined section contrast, and preserved responsive behaviour and active service navigation.
+
+
+## Pass 10.2 — General Medicine visual QA
+Replaced the mismatched surgical image in the Why Serenity section with a consultation-focused medical image and tightened responsive section alignment.
