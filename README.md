@@ -42,3 +42,7 @@ Expanded About into Story, Mission, Vision, Core Values, Healthcare Approach, In
 
 ## Pass 08.1 — About visual QA
 Fixed About-page card rendering, timeline presentation, infrastructure image-tile sizing, section spacing and responsive grid behaviour after live-page visual QA.
+
+
+## Pass 09 — Services page
+Rebuilt the Services page as a premium clinical directory with service-specific imagery, clear hierarchy, service detail links, a connected care journey and direct appointment/contact actions.

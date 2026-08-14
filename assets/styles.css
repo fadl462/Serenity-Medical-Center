@@ -505,3 +505,93 @@ main{width:100%}
     grid-row:auto !important;
   }
 }
+
+
+/* =========================================================
+   PASS 09 — SERVICES PAGE
+   ========================================================= */
+.services-hero{min-height:500px}
+.services-intro{padding-top:82px;padding-bottom:78px}
+.services-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end}
+.services-intro-grid>div{min-width:0}
+.services-intro-grid p{max-width:560px;color:var(--muted)}
+.services-intro-grid .lead{color:var(--teal)}
+.service-directory{background:#f4f8f6;padding-top:90px;padding-bottom:100px}
+.directory-head{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:35px}
+.directory-note{font-size:9px;color:var(--muted);padding-bottom:8px}
+.service-list{display:grid;gap:12px}
+.service-row{
+  position:relative;
+  display:grid;
+  grid-template-columns:150px 46px minmax(0,1fr) 60px;
+  gap:20px;
+  align-items:center;
+  min-height:180px;
+  padding:18px 24px 18px 18px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  color:var(--teal);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.service-row:hover{transform:translateY(-3px);box-shadow:0 18px 45px rgba(3,62,62,.10);border-color:#b8d8cf}
+.service-row.featured{background:var(--deep);color:#fff;border-color:var(--deep)}
+.service-row-image{width:150px;height:144px;border-radius:16px;background-size:cover;background-position:center}
+.service-row-number{align-self:start;padding-top:10px;font-size:9px;font-weight:900;color:#10928d}
+.featured .service-row-number{color:var(--lime)}
+.service-row-copy{min-width:0}
+.service-kicker{font-size:8px;letter-spacing:.12em;font-weight:900;color:#10928d;margin-bottom:9px}
+.featured .service-kicker{color:var(--lime)}
+.service-row h3{font:800 clamp(22px,2.5vw,31px) Manrope;letter-spacing:-.045em;line-height:1.05;margin:0 0 10px}
+.service-row p{font-size:10px;line-height:1.55;color:var(--muted);max-width:620px;margin:0}
+.featured p{color:#b8cfca}
+.service-arrow{font-size:26px;font-weight:300;text-align:right;color:#0b928d}
+.featured .service-arrow{color:var(--lime)}
+.service-experience{padding-top:100px;padding-bottom:100px}
+.service-experience-grid{display:grid;grid-template-columns:1fr 1fr;min-height:480px}
+.experience-panel{padding:48px;border-radius:24px 0 0 24px;display:flex;flex-direction:column;justify-content:flex-end}
+.experience-panel.dark{background:var(--deep);color:#fff}
+.experience-panel h2{font:800 42px Manrope;letter-spacing:-.05em;line-height:.98;margin:80px 0 16px}
+.experience-panel h2 span{color:var(--lime)}
+.experience-panel p{max-width:470px;color:#b8cfca;font-size:11px;line-height:1.6}
+.experience-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:32px}
+.experience-steps div{border:1px solid rgba(255,255,255,.13);border-radius:12px;padding:13px}
+.experience-steps b,.experience-steps span{display:block}
+.experience-steps b{font-size:8px;color:var(--lime)}
+.experience-steps span{font-size:9px;margin-top:10px}
+.experience-image{min-height:480px;border-radius:0 24px 24px 0;background-size:cover;background-position:center}
+.service-book{background:#eef7f4;padding-top:90px;padding-bottom:90px}
+.service-book-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.service-book h2{font:800 48px Manrope;line-height:.98;letter-spacing:-.055em;margin:14px 0 18px}
+.service-book h2 span{color:#07928d}
+.book-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.book-actions .text-link{width:100%;margin-top:8px}
+
+@media(max-width:850px){
+  .services-intro-grid,.service-experience-grid,.service-book-grid{grid-template-columns:1fr;gap:30px}
+  .service-row{grid-template-columns:125px 34px minmax(0,1fr) 40px}
+  .service-row-image{width:125px;height:130px}
+  .experience-panel{border-radius:24px 24px 0 0}
+  .experience-image{min-height:340px;border-radius:0 0 24px 24px}
+}
+@media(max-width:650px){
+  .services-intro-grid{gap:12px}
+  .directory-head{display:block}
+  .directory-note{margin-top:15px}
+  .service-row{
+    grid-template-columns:92px 1fr 28px;
+    gap:12px;
+    padding:12px;
+    min-height:140px;
+  }
+  .service-row-image{width:92px;height:115px}
+  .service-row-number{display:none}
+  .service-row h3{font-size:19px}
+  .service-row p{font-size:9px}
+  .service-kicker{font-size:7px}
+  .service-arrow{font-size:20px}
+  .experience-panel{padding:30px}
+  .experience-panel h2{font-size:34px;margin-top:55px}
+  .experience-steps{grid-template-columns:1fr 1fr}
+  .service-book h2{font-size:37px}
+}
