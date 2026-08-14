@@ -70,3 +70,7 @@ Replaced the mismatched surgical image in the Why Serenity section with a consul
 
 ## Pass 11 — Maternal & Child Care
 Created the second clinical service-detail page with maternal, maternity, newborn and paediatric care pathways, family-centered journey, reassurance section, related care and appointment CTAs.
+
+
+## Pass 11.1 — Maternal & Child Care visual QA
+Replaced the unrelated lifestyle/books image in the Why Serenity section with a clinical medical image and tightened the section's responsive alignment and checklist presentation.

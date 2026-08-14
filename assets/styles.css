@@ -856,3 +856,28 @@ main{position:relative;z-index:1}
   .maternity-page .maternity-hero{min-height:500px}
   .maternity-page .maternity-human .image-card{min-height:300px !important}
 }
+
+
+/* =========================================================
+   PASS 11.1 — MATERNAL & CHILD CARE VISUAL QA
+   ========================================================= */
+.maternity-page .maternity-human .image-card{
+  background-position:center;
+  background-size:cover;
+}
+.maternity-page .section-side-copy{
+  max-width:370px;
+}
+.maternity-page .check-list{
+  display:grid;
+  gap:9px;
+  margin-top:24px;
+}
+.maternity-page .check-list span{
+  font-size:10px;
+  color:var(--teal);
+}
+@media(max-width:650px){
+  .maternity-page .section-side-copy{max-width:none}
+  .maternity-page .maternity-human .image-card{min-height:300px !important}
+}
