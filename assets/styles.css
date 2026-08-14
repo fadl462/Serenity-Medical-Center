@@ -595,3 +595,33 @@ main{width:100%}
   .experience-steps{grid-template-columns:1fr 1fr}
   .service-book h2{font-size:37px}
 }
+
+/* =========================================================
+   PASS 09.1 — SERVICES QA
+   ========================================================= */
+.service-row-image{
+  background-color:#e7f1ee;
+  background-repeat:no-repeat;
+}
+.service-row:hover .service-row-image{transform:scale(1.015)}
+.service-row-image{transition:transform .35s ease}
+.service-detail-hero{min-height:510px}
+.detail-intro{padding-top:90px;padding-bottom:85px}
+.detail-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end}
+.detail-intro-grid p{color:var(--muted)}
+.detail-content{background:#f4f8f6}
+.detail-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.detail-cards article{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;min-height:250px}
+.detail-cards article span{font-size:9px;font-weight:900;color:#0a928d}
+.detail-cards h3{font:800 23px Manrope;margin:70px 0 10px}
+.detail-cards p{font-size:10px;line-height:1.55;color:var(--muted)}
+.detail-cta{background:var(--deep);color:#fff}
+.detail-cta .container{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.detail-cta h2{font:800 44px Manrope;line-height:.98;letter-spacing:-.05em;margin:12px 0 0}
+.detail-cta h2 span{color:var(--lime)}
+@media(max-width:850px){
+  .detail-intro-grid{grid-template-columns:1fr;gap:25px}
+  .detail-cards{grid-template-columns:1fr}
+  .detail-cta .container{display:block}
+  .detail-cta .btn{margin-top:25px}
+}

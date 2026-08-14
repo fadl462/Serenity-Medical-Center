@@ -46,3 +46,7 @@ Fixed About-page card rendering, timeline presentation, infrastructure image-til
 
 ## Pass 09 — Services page
 Rebuilt the Services page as a premium clinical directory with service-specific imagery, clear hierarchy, service detail links, a connected care journey and direct appointment/contact actions.
+
+
+## Pass 09.1 — Services QA
+Replaced weak/mismatched service imagery, fixed the pharmacy service destination by adding a dedicated pharmacy/medication support detail page, and added consistent detail-page styling.
