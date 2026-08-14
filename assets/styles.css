@@ -328,3 +328,180 @@ main{width:100%}
   .facility-note span{display:block;margin-top:6px}
   .commitment-stats{grid-template-columns:1fr}
 }
+
+
+/* =========================================================
+   PASS 08.1 — ABOUT VISUAL QA / STRUCTURE FIXES
+   ========================================================= */
+
+/* Restore the intended card architecture with explicit specificity. */
+.about-intro{
+  padding-top:86px !important;
+  padding-bottom:78px !important;
+}
+.about-story-grid{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  gap:70px !important;
+  align-items:end !important;
+}
+.about-story-grid>div{min-width:0}
+.about-timeline{
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:0 !important;
+  margin-top:50px !important;
+  border:0 !important;
+}
+.about-timeline>div{
+  background:#f4f8f6 !important;
+  border:1px solid var(--line) !important;
+  border-right:0 !important;
+  padding:22px 20px !important;
+  min-height:105px !important;
+}
+.about-timeline>div:first-child{
+  border-radius:16px 0 0 16px !important;
+  padding-left:20px !important;
+}
+.about-timeline>div:last-child{
+  border-right:1px solid var(--line) !important;
+  border-radius:0 16px 16px 0 !important;
+}
+.about-timeline b{font-size:24px !important}
+.about-timeline span{max-width:145px !important}
+
+/* Mission / vision: unmistakable two-card composition. */
+.about-mission{
+  background:#f4f8f6 !important;
+  padding-top:82px !important;
+  padding-bottom:82px !important;
+}
+.about-mission .mission-grid{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  gap:14px !important;
+}
+.about-mission .mission-card{
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:flex-end !important;
+  min-height:350px !important;
+  padding:34px !important;
+  border-radius:22px !important;
+}
+.about-mission .mission-card.dark{
+  background:var(--deep) !important;
+  color:#fff !important;
+}
+.about-mission .mission-card.lime{
+  background:var(--lime) !important;
+  color:var(--deep) !important;
+}
+.about-mission .mission-card h2{
+  margin:0 0 14px !important;
+  max-width:520px !important;
+  font-size:38px !important;
+}
+.about-mission .mission-card p{
+  margin:0 !important;
+  max-width:500px !important;
+}
+.about-mission .mission-card.dark p{color:#b8cfca !important}
+
+/* Infrastructure: prevent image tiles collapsing to text-height. */
+.infrastructure-about{
+  padding-top:90px !important;
+  padding-bottom:90px !important;
+}
+.infrastructure-about .infrastructure-grid{
+  display:grid !important;
+  width:100% !important;
+  height:540px !important;
+  grid-template-columns:minmax(0,1.45fr) minmax(0,.75fr) !important;
+  grid-template-rows:1fr 1fr !important;
+  gap:12px !important;
+}
+.infrastructure-about .infra-large,
+.infrastructure-about .infra-small{
+  display:block !important;
+  min-height:0 !important;
+  height:auto !important;
+  background-size:cover !important;
+  background-position:center !important;
+  border-radius:20px !important;
+}
+.infrastructure-about .infra-large{
+  grid-column:1 !important;
+  grid-row:1 / 3 !important;
+}
+.infrastructure-about .infra-small{
+  grid-column:2 !important;
+}
+.infrastructure-about .infrastructure-grid span{
+  bottom:18px !important;
+  left:18px !important;
+  color:#fff !important;
+  text-shadow:0 1px 10px rgba(0,0,0,.25);
+}
+.facility-note{
+  background:#fff !important;
+  border:1px solid var(--line) !important;
+  border-radius:14px !important;
+  padding:16px 18px !important;
+  margin-top:12px !important;
+}
+
+/* Reduce the excessive white breathing room around the approach section. */
+.approach-about{padding-top:90px !important;padding-bottom:90px !important}
+.approach-about .image-card{min-height:470px !important}
+
+/* Keep community commitment compact and visually balanced. */
+.community-commitment{padding-top:90px !important;padding-bottom:90px !important}
+.community-commitment .image-card{min-height:420px !important}
+
+@media(max-width:850px){
+  .about-story-grid{grid-template-columns:1fr !important;gap:24px !important}
+  .about-timeline{grid-template-columns:1fr 1fr !important}
+  .about-timeline>div:first-child{border-radius:16px 0 0 0 !important}
+  .about-timeline>div:nth-child(2){border-right:1px solid var(--line) !important;border-radius:0 16px 0 0 !important}
+  .about-timeline>div:nth-child(3){border-radius:0 0 0 16px !important}
+  .about-timeline>div:last-child{border-radius:0 0 16px 0 !important}
+  .about-mission .mission-grid{grid-template-columns:1fr !important}
+  .infrastructure-about .infrastructure-grid{
+    height:620px !important;
+    grid-template-columns:1fr 1fr !important;
+    grid-template-rows:1fr 1fr !important;
+  }
+  .infrastructure-about .infra-large{
+    grid-column:1 / 3 !important;
+    grid-row:1 !important;
+  }
+  .infrastructure-about .infra-small{grid-column:auto !important;grid-row:2 !important}
+}
+@media(max-width:650px){
+  .about-timeline{grid-template-columns:1fr !important}
+  .about-timeline>div,
+  .about-timeline>div:first-child,
+  .about-timeline>div:nth-child(2),
+  .about-timeline>div:nth-child(3),
+  .about-timeline>div:last-child{
+    border-right:1px solid var(--line) !important;
+    border-radius:0 !important;
+  }
+  .about-timeline>div:first-child{border-radius:16px 16px 0 0 !important}
+  .about-timeline>div:last-child{border-radius:0 0 16px 16px !important}
+  .about-mission .mission-card{min-height:290px !important;padding:27px !important}
+  .about-mission .mission-card h2{font-size:31px !important}
+  .infrastructure-about .infrastructure-grid{
+    height:auto !important;
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    grid-template-rows:250px 180px 180px !important;
+  }
+  .infrastructure-about .infra-large,
+  .infrastructure-about .infra-small{
+    grid-column:1 !important;
+    grid-row:auto !important;
+  }
+}

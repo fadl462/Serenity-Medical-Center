@@ -38,3 +38,7 @@ Homepage refined for hierarchy, factual restraint, stronger visual rhythm, and c
 
 ## Pass 08 — About page
 Expanded About into Story, Mission, Vision, Core Values, Healthcare Approach, Infrastructure and Community Commitment. Factual statements are grounded in current public Serenity Medical Center listings and profiles.
+
+
+## Pass 08.1 — About visual QA
+Fixed About-page card rendering, timeline presentation, infrastructure image-tile sizing, section spacing and responsive grid behaviour after live-page visual QA.
