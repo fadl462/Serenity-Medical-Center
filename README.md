@@ -1,4 +1,4 @@
-# Serenity Medical Center Website
+# Serenity Medical Center Website — Cameroon
 
 A polished, responsive front-end concept for Serenity Medical Center.
 
@@ -36,7 +36,7 @@ This front-end is intentionally deployable as a visual prototype. Real productio
 - Patient and doctor mobile apps
 - Authentication and appointment booking
 - Stripe
-- MTN MoMo
+- MTN Mobile Money (MoMo)
 - Orange Money
 - Real Google Maps embed/API
 - CMS/blog publishing

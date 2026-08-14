@@ -26,7 +26,7 @@ document.querySelectorAll('.donation-options button').forEach(btn=>btn.addEventL
 document.getElementById('donateBtn')?.addEventListener('click',()=>{
  const amount=document.getElementById('customAmount').value;
  if(!amount||+amount<1){showToast('Please enter a donation amount.');return}
- showToast(`Donation of GHS ${amount} selected — payment gateway ready for integration.`);
+ showToast(`Donation of FCFA ${Number(amount).toLocaleString('en-US')} selected — payment gateway ready for integration.`);
 });
 document.getElementById('contactForm')?.addEventListener('submit',e=>{
  e.preventDefault();document.getElementById('formNote').textContent='Thank you. Your enquiry has been received in this demo.';
