@@ -34,3 +34,7 @@ Global page-hero alignment, content-grid consistency, overflow protection, and a
 
 ## Pass 07 — Homepage
 Homepage refined for hierarchy, factual restraint, stronger visual rhythm, and cleaner conversion flow. Publicly sourced facts are used for Serenity's 2020 establishment, 24/7 operation, Damas location, patient-centered positioning and published service areas.
+
+
+## Pass 08 — About page
+Expanded About into Story, Mission, Vision, Core Values, Healthcare Approach, Infrastructure and Community Commitment. Factual statements are grounded in current public Serenity Medical Center listings and profiles.

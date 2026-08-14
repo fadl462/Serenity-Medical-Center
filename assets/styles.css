@@ -261,3 +261,70 @@ main{width:100%}
   .service-feature{min-height:0}
   .service-feature-copy h3{font-size:28px}
 }
+
+
+/* =========================================================
+   PASS 08 — ABOUT PAGE
+   ========================================================= */
+.about-hero{min-height:520px}
+.about-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:end}
+.about-story-grid p{font-size:13px;color:var(--muted)}
+.about-timeline{display:grid;grid-template-columns:repeat(4,1fr);margin-top:65px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-timeline>div{padding:28px 20px;border-right:1px solid var(--line)}
+.about-timeline>div:first-child{padding-left:0}
+.about-timeline>div:last-child{border-right:0}
+.about-timeline b{display:block;font:800 26px Manrope;color:var(--teal)}
+.about-timeline span{display:block;font-size:9px;color:var(--muted);margin-top:5px}
+.about-mission{background:#f4f8f6}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mission-card{padding:45px;border-radius:25px;min-height:340px}
+.mission-card.dark{background:var(--deep);color:#fff}
+.mission-card.lime{background:var(--lime)}
+.mission-card .eyebrow{color:var(--teal)}
+.mission-card.dark .eyebrow{color:var(--lime)}
+.mission-card h2{font:800 39px Manrope;line-height:1.02;letter-spacing:-.05em;margin:95px 0 16px}
+.mission-card h2 span{color:var(--lime)}
+.mission-card.lime h2 span{color:var(--deep)}
+.mission-card p{font-size:12px;max-width:470px}
+.mission-card.dark p{color:#b8cfca}
+.section-side-copy{max-width:360px;color:var(--muted);font-size:11px;line-height:1.6}
+.about-checks{display:grid;gap:15px;margin:28px 0}
+.about-checks>div{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start}
+.about-checks>div>span{width:28px;height:28px;border-radius:9px;background:var(--mint);display:grid;place-items:center;color:var(--teal);font-size:8px;font-weight:800}
+.about-checks b{font-size:12px}
+.about-checks p{margin:2px 0 0;color:var(--muted);font-size:10px}
+.infrastructure-about{background:#f4f8f6}
+.infrastructure-grid{display:grid;grid-template-columns:1.4fr .8fr;grid-template-rows:260px 260px;gap:12px}
+.infra-large,.infra-small{background-size:cover;background-position:center;border-radius:22px;position:relative;overflow:hidden}
+.infra-large{grid-row:1/3}
+.infra-large:after,.infra-small:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,44,44,.02),rgba(3,44,44,.65))}
+.infrastructure-grid span{position:absolute;z-index:2;bottom:20px;left:20px;color:#fff;font-size:9px;font-weight:800;letter-spacing:.1em}
+.facility-note{display:flex;justify-content:space-between;gap:30px;margin-top:16px;padding:18px 0;border-top:1px solid var(--line)}
+.facility-note strong{font-size:11px}.facility-note span{font-size:9px;color:var(--muted)}
+.community-commitment{background:#fff}
+.commitment-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:30px 0}
+.commitment-stats div{padding:15px;border:1px solid var(--line);border-radius:14px}
+.commitment-stats b,.commitment-stats span{display:block}
+.commitment-stats b{font:700 13px Manrope}
+.commitment-stats span{font-size:9px;color:var(--muted);margin-top:4px}
+
+@media(max-width:850px){
+  .about-story-grid,.mission-grid{grid-template-columns:1fr;gap:35px}
+  .about-timeline{grid-template-columns:1fr 1fr}
+  .about-timeline>div:nth-child(2){border-right:0}
+  .about-timeline>div:nth-child(3){padding-left:0}
+  .infrastructure-grid{grid-template-columns:1fr 1fr;grid-template-rows:280px 180px}
+  .infra-large{grid-column:1/-1;grid-row:auto}
+}
+@media(max-width:650px){
+  .about-timeline{grid-template-columns:1fr 1fr}
+  .about-timeline>div{padding:18px 12px}
+  .about-timeline>div:nth-child(odd){padding-left:0}
+  .mission-card{padding:28px;min-height:290px}
+  .mission-card h2{margin-top:70px;font-size:31px}
+  .infrastructure-grid{display:grid;grid-template-columns:1fr;grid-template-rows:250px 180px 180px}
+  .infra-large{grid-column:auto;grid-row:auto}
+  .facility-note{display:block}
+  .facility-note span{display:block;margin-top:6px}
+  .commitment-stats{grid-template-columns:1fr}
+}
