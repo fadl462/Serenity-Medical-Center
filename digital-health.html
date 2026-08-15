@@ -1,38 +1,66 @@
 <!doctype html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Serenity Medical Center in Yaoundé, Cameroon — patient-centered healthcare, diagnostics, maternal and child care, surgery and emergency support.">
+<meta name="description" content="Serenity Medical Center Digital Health ecosystem in Yaoundé, Cameroon — connected patient, doctor, clinic and pharmacy platforms designed to simplify care.">
 <link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css">
-<title>Digital Healthcare | Serenity Medical Center</title></head><body>
+<title>Digital Health Ecosystem | Serenity Medical Center</title>
+<style>
+.digital-hero{min-height:520px}.digital-hero .container{padding-bottom:78px}
+.digital-platforms{padding-top:92px;padding-bottom:105px}
+.digital-platforms h2{max-width:650px}
+.platform-grid-enhanced{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:48px}
+.platform-card{position:relative;overflow:hidden;min-height:315px;padding:32px;border:1px solid var(--line);border-radius:24px;background:#fff;transition:transform .25s,box-shadow .25s,border-color .25s}
+.platform-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#c8e1db}
+.platform-card.featured{background:var(--deep);color:#fff;border-color:var(--deep)}
+.platform-card .platform-number{font-size:9px;letter-spacing:.14em;font-weight:800;color:var(--teal)}
+.platform-card.featured .platform-number{color:var(--lime)}
+.platform-icon{position:absolute;right:28px;top:26px;width:58px;height:58px;border-radius:18px;background:var(--mint);color:var(--deep);display:grid;place-items:center;font:800 19px Manrope}
+.platform-card.featured .platform-icon{background:rgba(174,232,120,.14);color:var(--lime)}
+.platform-card h3{font:800 29px Manrope;letter-spacing:-.04em;margin:72px 0 10px;max-width:330px}
+.platform-card p{font-size:12px;color:var(--muted);max-width:430px;margin:0 0 22px}.platform-card.featured p{color:#b7cfca}
+.platform-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.platform-action{display:inline-flex;align-items:center;gap:7px;padding:10px 13px;border-radius:100px;background:var(--deep);color:#fff;font-size:9px;font-weight:800}.platform-card.featured .platform-action{background:var(--lime);color:var(--deep)}
+.platform-meta{font-size:8px;color:#6f8c87;font-weight:700}.platform-card.featured .platform-meta{color:#9ab7b2}
+.platform-art{position:absolute;right:-30px;bottom:-40px;width:160px;height:160px;border-radius:50%;border:1px solid rgba(8,115,109,.10);pointer-events:none}.platform-art:before,.platform-art:after{content:"";position:absolute;border:1px solid rgba(8,115,109,.08);border-radius:50%;inset:22px}.platform-art:after{inset:47px}.platform-card.featured .platform-art{border-color:rgba(174,232,120,.10)}.platform-card.featured .platform-art:before,.platform-card.featured .platform-art:after{border-color:rgba(174,232,120,.08)}
+.digital-flow{background:var(--cream)}
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:48px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.flow-step{min-height:235px;padding:28px 25px;border-right:1px solid var(--line);position:relative}.flow-step:last-child{border-right:0}.flow-step span{font-size:9px;color:var(--teal);font-weight:800}.flow-step h3{font:800 22px Manrope;margin:58px 0 9px}.flow-step p{font-size:10px;color:var(--muted);margin:0}.flow-arrow{position:absolute;right:17px;top:27px;color:var(--lime);font-weight:900}
+.digital-showcase{background:#eaf6f1}.digital-showcase .split{gap:72px}.ecosystem-visual{min-height:470px;border-radius:28px;background:linear-gradient(145deg,#e0f2eb,#f8fbfa);border:1px solid #d7e9e4;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.ecosystem-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:126px;height:126px;border-radius:50%;background:var(--deep);color:var(--lime);display:grid;place-items:center;font:800 32px Manrope;box-shadow:0 0 0 24px rgba(8,115,109,.06),0 22px 55px rgba(7,59,60,.18)}
+.eco-node{position:absolute;background:#fff;border:1px solid rgba(8,115,109,.08);border-radius:14px;padding:13px 15px;box-shadow:0 14px 35px rgba(7,59,60,.08);font-size:9px;font-weight:800;min-width:110px}.eco-node small{display:block;color:#7b9591;font-size:7px;font-weight:600;margin-top:3px}.eco-node.n1{top:55px;left:45px}.eco-node.n2{top:75px;right:40px}.eco-node.n3{bottom:65px;left:40px}.eco-node.n4{bottom:45px;right:35px}
+.eco-line{position:absolute;left:50%;top:50%;width:320px;height:210px;transform:translate(-50%,-50%);border:1px dashed rgba(8,115,109,.18);border-radius:50%;pointer-events:none}.digital-copy h2{max-width:600px}.digital-copy p{max-width:600px}
+.access-strip{padding:88px 0;background:#fff}.access-panel{border-radius:25px;background:var(--deep);color:#fff;padding:42px 45px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}.access-panel h2{font:800 43px Manrope;line-height:1.02;letter-spacing:-.05em;margin:10px 0 12px}.access-panel h2 span{color:var(--lime)}.access-panel p{font-size:12px;color:#b8cfca;max-width:570px}.access-buttons{display:flex;justify-content:flex-end;gap:9px;flex-wrap:wrap}.store-pill{padding:13px 17px;border:1px solid rgba(255,255,255,.18);border-radius:13px;color:#fff;font-size:9px;font-weight:800}.store-pill strong{display:block;font-size:12px}.store-pill small{color:#9ab6b1}
+@media(max-width:850px){.platform-grid-enhanced{grid-template-columns:1fr}.flow-grid{grid-template-columns:1fr 1fr}.flow-step:nth-child(2){border-right:0}.flow-step:nth-child(-n+2){border-bottom:1px solid var(--line)}.access-panel{grid-template-columns:1fr}.access-buttons{justify-content:flex-start}}
+@media(max-width:650px){.digital-hero{min-height:440px}.digital-platforms{padding-top:65px;padding-bottom:70px}.platform-card{min-height:285px;padding:25px}.platform-card h3{font-size:25px;margin-top:70px}.flow-grid{grid-template-columns:1fr}.flow-step,.flow-step:nth-child(2){border-right:0;border-bottom:1px solid var(--line);min-height:180px}.flow-step:last-child{border-bottom:0}.flow-step h3{margin-top:38px}.ecosystem-visual{min-height:350px}.eco-line{width:230px;height:155px}.eco-node{min-width:90px;padding:10px}.eco-node.n1{top:28px;left:18px}.eco-node.n2{top:38px;right:18px}.eco-node.n3{bottom:35px;left:18px}.eco-node.n4{bottom:24px;right:18px}.ecosystem-center{width:100px;height:100px;font-size:25px}.access-panel{padding:30px 24px}.access-panel h2{font-size:34px}.store-pill{flex:1;min-width:125px}}
+</style></head><body>
 <div class="topbar">YAOUNDÉ · CAMEROON <span>Care · Innovation · Quality</span> <a href="contact.html">+237 683 539 388</a></div>
-
 <header class="site-header">
   <a class="brand" href="index.html"><img src="assets/serenity-logo.jpg" alt="Serenity Medical Center logo"><span><strong>Serenity</strong><small>MEDICAL CENTER</small></span></a>
   <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
   <nav class="nav">
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="digital-health.html">Digital Health</a>
-    <a href="foundation.html">Foundation</a>
-    <a href="community.html">Community</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="partner.html">Partner</a>
-    <div class="language-switch"><a class="active" href="#">EN</a><a href="#">FR</a></div>
-    <a class="nav-cta" href="contact.html">Book a Visit</a>
+    <a href="about.html">About</a><a href="services.html">Services</a><a class="active" href="digital-health.html">Digital Health</a><a href="foundation.html">Foundation</a><a href="community.html">Community</a><a href="gallery.html">Gallery</a><a href="partner.html">Partner</a>
+    <div class="language-switch"><a class="active" href="#">EN</a><a href="#">FR</a></div><a class="nav-cta" href="contact.html">Book a Visit</a>
   </nav>
 </header>
 <main>
-<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1400&q=88')"><div class="page-hero-overlay"></div><div class="container"><div class="eyebrow">DIGITAL HEALTHCARE ECOSYSTEM</div><h1>Connected care,<br><em>built for tomorrow.</em></h1><p>Patient, clinician, clinic and pharmacy experiences designed to work together.</p></div></section>
-<section class="section"><div class="container digital-page"><div class="eyebrow">FOUR CONNECTED PLATFORMS</div><h2>One ecosystem.<br><span>Four experiences.</span></h2><div class="platform-grid"><article><span>01</span><h3>Patient App</h3><p>Appointments, care access, reminders and patient-facing services.</p><a href="contact.html">Learn more →</a></article><article><span>02</span><h3>Doctor App</h3><p>Clinical coordination, patient information and care workflow support.</p><a href="contact.html">Learn more →</a></article><article><span>03</span><h3>Clinic Panel</h3><p>Operational visibility, patient flow, service management and reporting.</p><a href="contact.html">Learn more →</a></article><article><span>04</span><h3>Pharmacy Panel</h3><p>Medication support and connected pharmacy workflows.</p><a href="contact.html">Learn more →</a></article></div></div></section>
-<section class="section soft"><div class="container split align-center"><div class="image-card large" style="background-image:url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=88')"></div><div><div class="eyebrow">DIGITAL-FIRST, HUMAN ALWAYS</div><h2>Technology should make care feel simpler.</h2><p class="lead">The digital ecosystem is designed to reduce friction while keeping clinical relationships at the center.</p><a class="btn btn-dark" href="contact.html">Request platform access →</a></div></div></section>
+<section class="page-hero digital-hero" style="background-image:url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1800&q=90')"><div class="page-hero-overlay"></div><div class="container"><div class="eyebrow">DIGITAL HEALTHCARE ECOSYSTEM</div><h1>Connected care,<br><em>built for tomorrow.</em></h1><p>Patient, clinician, clinic and pharmacy experiences designed to work together across the Serenity care journey.</p></div></section>
+
+<section class="section digital-platforms"><div class="container"><div class="eyebrow">FOUR CONNECTED PLATFORMS</div><h2>One ecosystem.<br><span>Four experiences.</span></h2><p class="lead" style="max-width:650px">Each platform is designed around a different role in care — while keeping information, communication and service delivery connected.</p>
+<div class="platform-grid-enhanced">
+<article class="platform-card"><span class="platform-number">01 · PATIENT EXPERIENCE</span><div class="platform-icon">P</div><h3>Patient App</h3><p>Book appointments, manage reminders, access care information and stay connected with the Serenity team.</p><div class="platform-actions"><a class="platform-action" href="contact.html">Request access →</a><span class="platform-meta">iOS · Android</span></div><div class="platform-art"></div></article>
+<article class="platform-card"><span class="platform-number">02 · CLINICAL EXPERIENCE</span><div class="platform-icon">D</div><h3>Doctor App</h3><p>Support clinical coordination, patient information, follow-up and day-to-day care workflows.</p><div class="platform-actions"><a class="platform-action" href="contact.html">Request access →</a><span class="platform-meta">Clinician access</span></div><div class="platform-art"></div></article>
+<article class="platform-card featured"><span class="platform-number">03 · OPERATIONS</span><div class="platform-icon">C</div><h3>Clinic Panel</h3><p>Give the clinic team a clearer view of patient flow, service management, operational activity and reporting.</p><div class="platform-actions"><a class="platform-action" href="contact.html">Request access →</a><span class="platform-meta">Web panel</span></div><div class="platform-art"></div></article>
+<article class="platform-card"><span class="platform-number">04 · MEDICATION</span><div class="platform-icon">Rx</div><h3>Pharmacy Panel</h3><p>Connect medication support, pharmacy workflows and patient-facing continuity with the wider Serenity ecosystem.</p><div class="platform-actions"><a class="platform-action" href="contact.html">Request access →</a><span class="platform-meta">Web panel</span></div><div class="platform-art"></div></article>
+</div></div></section>
+
+<section class="section digital-flow"><div class="container"><div class="section-head"><div><div class="eyebrow">HOW THE ECOSYSTEM CONNECTS</div><h2>One journey.<br><span>Less friction.</span></h2></div><p class="section-side-copy">The platforms are designed to support the patient and care team at each stage without making the technology the centre of the experience.</p></div><div class="flow-grid">
+<div class="flow-step"><span>01</span><i class="flow-arrow">→</i><h3>Book</h3><p>Patients start with an appointment or care request through the digital experience.</p></div>
+<div class="flow-step"><span>02</span><i class="flow-arrow">→</i><h3>Coordinate</h3><p>Doctors and clinic teams receive the information they need to prepare and respond.</p></div>
+<div class="flow-step"><span>03</span><i class="flow-arrow">→</i><h3>Deliver</h3><p>Clinical, diagnostic and pharmacy workflows stay connected around the patient.</p></div>
+<div class="flow-step"><span>04</span><i class="flow-arrow">✓</i><h3>Follow up</h3><p>Reminders, guidance and continuity help patients stay connected after care.</p></div>
+</div></div></section>
+
+<section class="section digital-showcase"><div class="container split align-center"><div class="ecosystem-visual"><div class="eco-line"></div><div class="ecosystem-center">S</div><div class="eco-node n1">Patient App<small>Appointments & access</small></div><div class="eco-node n2">Doctor App<small>Clinical workflow</small></div><div class="eco-node n3">Clinic Panel<small>Operations</small></div><div class="eco-node n4">Pharmacy<small>Medication support</small></div></div><div class="digital-copy"><div class="eyebrow">DIGITAL-FIRST, HUMAN ALWAYS</div><h2>Technology should make care feel <span>simpler.</span></h2><p class="lead">The Serenity digital ecosystem is designed to reduce friction while keeping clinical relationships, privacy and patient experience at the centre.</p><div class="check-list"><span>✓ Clearer patient communication</span><span>✓ Connected clinical workflows</span><span>✓ Better operational visibility</span><span>✓ Easier continuity of care</span></div><a class="btn btn-dark" href="contact.html">Request platform access →</a></div></div></section>
+
+<section class="access-strip"><div class="container"><div class="access-panel"><div><div class="eyebrow" style="color:#c6ecb4">PLATFORM ACCESS</div><h2>Ready to connect with <span>Serenity?</span></h2><p>Talk to the Serenity team about patient app access, clinician access or clinic and pharmacy panel onboarding. Mobile availability can be provided for supported users and devices.</p></div><div class="access-buttons"><div class="store-pill"><strong>iOS</strong><small>Patient app</small></div><div class="store-pill"><strong>Android</strong><small>Patient app</small></div><a class="store-pill" href="contact.html"><strong>Web panels</strong><small>Request access →</small></a></div></div></div></section>
 </main>
-<footer class="footer">
-  <div class="container footer-grid">
-    <div><a class="brand footer-brand" href="index.html"><img src="assets/serenity-logo.jpg" alt=""><span><strong>Serenity</strong><small>MEDICAL CENTER</small></span></a>
-    <p>Care · Innovation · Quality.<br>Patient-centered healthcare in Yaoundé.</p></div>
-    <div><b>Explore</b><a href="about.html">About Serenity</a><a href="services.html">Services</a><a href="digital-health.html">Digital Health</a><a href="community.html">Community</a></div>
-    <div><b>Support</b><a href="foundation.html">Health Foundation</a><a href="partner.html">Become a Partner</a><a href="contact.html">Contact</a><a href="contact.html">Emergency support</a></div>
-    <div><b>Visit</b><span>Maison Damas<br>Chris Complex<br>Yaoundé, Cameroon</span><span>+237 683 539 388</span><span>Open 24 hours</span></div>
-  </div>
-  <div class="footer-bottom container"><span>© 2026 Serenity Medical Center. All rights reserved.</span><span>Privacy · Terms · Accessibility</span></div>
-</footer>
+<footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="assets/serenity-logo.jpg" alt=""><span><strong>Serenity</strong><small>MEDICAL CENTER</small></span></a><p>Care · Innovation · Quality.<br>Patient-centered healthcare in Yaoundé.</p></div><div><b>Explore</b><a href="about.html">About Serenity</a><a href="services.html">Services</a><a href="digital-health.html">Digital Health</a><a href="community.html">Community</a></div><div><b>Support</b><a href="foundation.html">Health Foundation</a><a href="partner.html">Become a Partner</a><a href="contact.html">Contact</a><a href="contact.html">Emergency support</a></div><div><b>Visit</b><span>Maison Damas<br>Chris Complex<br>Yaoundé, Cameroon</span><span>+237 683 539 388</span><span>Open 24 hours</span></div></div><div class="footer-bottom container"><span>© 2026 Serenity Medical Center. All rights reserved.</span><span>Privacy · Terms · Accessibility</span></div></footer>
 <script src="assets/app.js"></script></body></html>
