@@ -82,3 +82,6 @@ Balanced the family-care journey section with supporting copy, tightened desktop
 
 ## Pass 13 — Surgery & Emergency
 Created a dedicated surgery and emergency service page with urgent-care positioning, clinical response pathway, procedure support, recovery follow-up, related care and contact CTAs.
+
+## Pass 13.1 — Surgery visual refinement
+Replaced the generic stethoscope image in the surgery/emergency human-care section with a more clinically relevant procedural-care visual so the section better matches the page subject.
