@@ -80,5 +80,5 @@ Replaced the unrelated lifestyle/books image in the Why Serenity section with a 
 Balanced the family-care journey section with supporting copy, tightened desktop spacing, strengthened process-stage separation, and added subtle interaction polish while preserving the minimalist Serenity aesthetic.
 
 
-## Pass 12 — Laboratory & Ultrasound
-Created the diagnostic service detail page with laboratory testing, ultrasound, diagnostic journey, patient-centered support, related care and booking CTAs. Also corrected the Maternal & Child Care document title found during QA.
+## Pass 13 — Surgery & Emergency
+Created a dedicated surgery and emergency service page with urgent-care positioning, clinical response pathway, procedure support, recovery follow-up, related care and contact CTAs.

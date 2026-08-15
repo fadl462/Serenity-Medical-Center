@@ -939,3 +939,19 @@ main{position:relative;z-index:1}
 .diagnostics-page .check-list span{font-size:10px;color:var(--teal)}
 .diagnostics-page .diagnostics-process .process-grid>div{padding:30px 22px 34px;min-height:170px}
 @media(max-width:650px){.diagnostics-page .diagnostics-hero{min-height:500px}.diagnostics-page .diagnostics-human .image-card{min-height:300px !important}.diagnostics-page .section-side-copy{max-width:none}}
+
+
+/* =========================================================
+   PASS 13 — SURGERY & EMERGENCY
+   ========================================================= */
+.surgery-page .surgery-hero{min-height:520px}
+.surgery-page .surgery-trust-strip .container>div:nth-child(3) strong{color:var(--lime)}
+.surgery-page .treatment-grid article:first-child{background:var(--deep);color:#fff}
+.surgery-page .treatment-grid article:first-child p{color:#b8cfca}
+.surgery-page .treatment-grid article:first-child span{color:var(--lime)}
+.surgery-page .surgery-human{background:#eef7f4}
+.surgery-page .surgery-human .image-card{background-position:center;background-size:cover;box-shadow:0 18px 45px rgba(0,48,48,.08)}
+.surgery-page .surgery-process .section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,370px);gap:60px;align-items:end;margin-bottom:34px}
+.surgery-page .surgery-process .section-side-copy{max-width:370px;margin:0 0 4px auto}
+@media(max-width:850px){.surgery-page .surgery-process .section-head{grid-template-columns:1fr;gap:18px}.surgery-page .surgery-process .section-side-copy{max-width:600px;margin:0}}
+@media(max-width:650px){.surgery-page .surgery-hero{min-height:500px}.surgery-page .surgery-human .image-card{min-height:300px!important}}
