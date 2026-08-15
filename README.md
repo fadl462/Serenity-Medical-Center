@@ -74,3 +74,7 @@ Created the second clinical service-detail page with maternal, maternity, newbor
 
 ## Pass 11.1 — Maternal & Child Care visual QA
 Replaced the unrelated lifestyle/books image in the Why Serenity section with a clinical medical image and tightened the section's responsive alignment and checklist presentation.
+
+
+## Pass 11.2 — Maternal & Child Care composition polish
+Balanced the family-care journey section with supporting copy, tightened desktop spacing, strengthened process-stage separation, and added subtle interaction polish while preserving the minimalist Serenity aesthetic.
