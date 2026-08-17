@@ -44,34 +44,14 @@
 .foundation-page .payment-method b,.foundation-page .payment-method span{display:block}.foundation-page .payment-method b{font-size:10px}.foundation-page .payment-method span{font-size:8px;color:#607b77;margin-top:3px}
 .foundation-page .modal-submit{width:100%;justify-content:center}.foundation-page .modal-note{display:block;color:#7d9692;font-size:8px;line-height:1.5;margin-top:13px;text-align:center}
 .foundation-page.modal-open{overflow:hidden}
-
-/* PASS 18 — contribution flow polish */
-.foundation-page .contribution-flow{width:min(620px,100%);padding:34px 36px}
-.foundation-page .flow-progress{display:flex;align-items:center;gap:9px;margin:18px 0 22px}
-.foundation-page .flow-progress i{height:1px;background:#d7e6e1;flex:1}
-.foundation-page .flow-dot{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#edf4f1;color:#78918d;font-size:9px;font-weight:800;transition:.2s}
-.foundation-page .flow-dot.active{background:#b8eb67;color:#063b3b}
-.foundation-page .flow-step{display:none}.foundation-page .flow-step.active{display:block}
-.foundation-page .flow-step h2,.foundation-page .flow-success h2{margin-top:8px}
-.foundation-page .flow-fields{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
-.foundation-page .flow-fields label:first-child{grid-column:1/-1}
-.foundation-page .flow-fields label{margin:10px 0}
-.foundation-page .optional{font-weight:500;color:#7d9692}
-.foundation-page .payment-row{display:grid;grid-template-columns:1fr .55fr;gap:10px}
-.foundation-page .payment-fields label{margin:10px 0}
-.foundation-page .flow-actions{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
-.foundation-page .btn-ghost{border:1px solid #d7e6e1;background:#fff;color:#063b3b}
-.foundation-page .goods-select-grid button.selected{background:#edf7f3;border-color:#08736d;box-shadow:inset 0 0 0 1px #08736d}
-.foundation-page .review-list{display:grid;gap:1px;background:#d7e6e1;border:1px solid #d7e6e1;border-radius:15px;overflow:hidden;margin:18px 0}
-.foundation-page .review-list div{display:flex;justify-content:space-between;gap:20px;padding:12px 14px;background:#fff}
-.foundation-page .review-list span{font-size:9px;color:#78918d}.foundation-page .review-list b{font-size:10px;color:#063b3b;text-align:right}
-.foundation-page .demo-notice{display:flex;gap:10px;align-items:flex-start;background:#fff7df;border:1px solid #f0dfaa;border-radius:13px;padding:12px;margin:15px 0}
-.foundation-page .demo-notice strong{font-size:9px;color:#6d5700;white-space:nowrap}.foundation-page .demo-notice span{font-size:8px;line-height:1.5;color:#7d7040}
-.foundation-page .flow-success{text-align:center}.foundation-page .flow-success[hidden]{display:none}.foundation-page .success-icon{width:62px;height:62px;border-radius:50%;background:#b8eb67;color:#063b3b;display:grid;place-items:center;font:800 28px Manrope;margin:0 auto 20px}
-.foundation-page .flow-success h2{max-width:460px;margin:10px auto}.foundation-page .flow-success p{max-width:390px;margin:0 auto 20px;color:#607b77;font-size:11px;line-height:1.6}
-.foundation-page .reference-box{background:#edf7f3;border-radius:14px;padding:14px;margin:18px auto 20px;max-width:260px}.foundation-page .reference-box span{display:block;font-size:8px;letter-spacing:.12em;color:#08736d;font-weight:800}.foundation-page .reference-box b{display:block;font:800 20px Manrope;color:#063b3b;margin-top:5px;letter-spacing:.08em}
 @media(max-width:850px){.foundation-page .donation-layout{grid-template-columns:1fr;gap:30px}.foundation-page .donation-visual{min-height:430px}}
-@media(max-width:650px){.foundation-page .flow-fields,.foundation-page .payment-row{grid-template-columns:1fr}.foundation-page .flow-fields label:first-child{grid-column:auto}.foundation-page .contribution-flow{padding:28px 20px}.foundation-page .flow-actions{flex-direction:column-reverse}.foundation-page .flow-actions .btn{width:100%;justify-content:center}.foundation-page .goods-select-grid,.foundation-page .payment-methods{grid-template-columns:1fr}.foundation-page .donation-tabs{width:100%}.foundation-page .donation-tab{flex:1}.foundation-page .donation-visual{min-height:340px}.foundation-page .modal-card{padding:28px 20px}}
+@media(max-width:650px){.foundation-page .goods-select-grid,.foundation-page .payment-methods{grid-template-columns:1fr}.foundation-page .donation-tabs{width:100%}.foundation-page .donation-tab{flex:1}.foundation-page .donation-visual{min-height:340px}.foundation-page .modal-card{padding:28px 20px}}
+</style>
+
+<style id="foundation-pass-18-contribution-ux">
+.foundation-page .contribution-steps{display:flex;gap:8px;margin:18px 0 22px}.foundation-page .contribution-step{flex:1;padding:9px 10px;border-radius:999px;background:#eef5f2;color:#75908b;font-size:8px;font-weight:800;text-align:center}.foundation-page .contribution-step.active{background:#063b3b;color:#fff}.foundation-page .modal-actions{display:flex;gap:8px;margin-top:18px}.foundation-page .modal-actions .btn{flex:1}.foundation-page .modal-back{border:1px solid #d7e6e1;background:#fff;color:#063b3b}.foundation-page .modal-card input:focus{border-color:#08736d;box-shadow:0 0 0 3px rgba(8,115,109,.08)}
+.foundation-page .review-list{display:grid;gap:8px;margin:18px 0}.foundation-page .review-row{display:flex;justify-content:space-between;gap:15px;padding:11px 0;border-bottom:1px solid #edf2ef;font-size:10px}.foundation-page .review-row span{color:#6c8580}.foundation-page .review-row strong{text-align:right;color:#063b3b}.foundation-page .success-state{text-align:center;padding:12px 4px 4px}.foundation-page .success-icon{width:64px;height:64px;border-radius:50%;background:#bde95f;color:#063b3b;display:grid;place-items:center;margin:0 auto 18px;font:800 28px Manrope}.foundation-page .success-state h2{margin-top:0}.foundation-page .reference{display:inline-block;background:#edf7f3;border:1px solid #d7e6e1;border-radius:999px;padding:9px 13px;font-size:10px;font-weight:800;color:#063b3b;margin:12px 0}.foundation-page .goods-selection{display:grid;gap:7px;margin:12px 0}.foundation-page .goods-item{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid #d7e6e1;border-radius:12px;padding:10px}.foundation-page .goods-item strong{font-size:9px}.foundation-page .qty-control{display:flex;align-items:center;gap:7px}.foundation-page .qty-control button{width:25px;height:25px;border:1px solid #d7e6e1;border-radius:50%;background:#f4f8f6;cursor:pointer;color:#063b3b;font-weight:800}.foundation-page .qty-control span{min-width:15px;text-align:center;font-size:9px;font-weight:800}.foundation-page .goods-select-grid button.selected{background:#edf7f3;border-color:#08736d;box-shadow:inset 0 0 0 1px #08736d}.foundation-page .goods-select-grid button.selected span{font-size:0}.foundation-page .goods-select-grid button.selected span:after{content:'✓';font-size:12px;color:#08736d}.foundation-page .form-error{color:#a33b3b;font-size:9px;margin:8px 0;display:none}.foundation-page .form-error.show{display:block}
+@media(max-width:650px){.foundation-page .modal-actions{flex-direction:column}.foundation-page .contribution-step{font-size:7px;padding:8px 4px}}
 </style>
 </head>
 <body class="foundation-page">
@@ -104,129 +84,73 @@
 
 <div class="donation-modal" id="donation-modal" aria-hidden="true" style="display:none">
   <div class="modal-backdrop"></div>
-  <div class="modal-card contribution-flow" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <button class="modal-close" aria-label="Close">×</button>
-    <div class="eyebrow">SECURE CONTRIBUTION</div>
-    <div class="flow-progress" aria-label="Contribution progress">
-      <span class="flow-dot active" data-step="1">1</span><i></i><span class="flow-dot" data-step="2">2</span><i></i><span class="flow-dot" data-step="3">3</span>
-    </div>
-    <div class="flow-step active" data-flow-step="1">
-      <h2 id="modal-title">Complete your support.</h2>
-      <p id="modal-summary">Review your contribution and tell us how we can reach you.</p>
-      <div class="modal-summary-box" id="modal-summary-box"></div>
-      <div class="flow-fields">
-        <label>Full name<input id="donor-name" autocomplete="name" placeholder="Your full name"></label>
-        <label>Email address<input id="donor-email" type="email" autocomplete="email" placeholder="you@example.com"></label>
-        <label>Phone number <span class="optional">(optional)</span><input id="donor-phone" type="tel" autocomplete="tel" placeholder="+237 ..."></label>
-      </div>
-      <button class="btn btn-primary modal-next" data-next="2">Continue to payment →</button>
-    </div>
-    <div class="flow-step" data-flow-step="2">
-      <h2>Choose payment.</h2>
-      <p>Select the method you would like to use. This demo does not charge a card or mobile-money account.</p>
-      <div class="payment-methods">
-        <button class="payment-method active" data-payment="Stripe"><b>Stripe</b><span>Card payment</span></button>
-        <button class="payment-method" data-payment="MTN MoMo"><b>MTN MoMo</b><span>Mobile money</span></button>
-        <button class="payment-method" data-payment="Orange Money"><b>Orange Money</b><span>Mobile money</span></button>
-      </div>
-      <div class="payment-fields" id="stripe-fields">
-        <label>Cardholder name<input id="card-name" placeholder="Name on card"></label>
-        <div class="payment-row"><label>Card number<input id="card-number" inputmode="numeric" placeholder="4242 4242 4242 4242"></label><label>Expiry<input id="card-expiry" placeholder="MM / YY"></label></div>
-      </div>
-      <div class="payment-fields" id="mobile-fields" hidden>
-        <label>Mobile money number<input id="mobile-number" type="tel" inputmode="tel" placeholder="+237 ..."></label>
-      </div>
-      <div class="flow-actions"><button class="btn btn-ghost modal-back" data-back="1">← Back</button><button class="btn btn-primary modal-next" data-next="3">Review contribution →</button></div>
-    </div>
-    <div class="flow-step" data-flow-step="3">
-      <h2>Review & confirm.</h2>
-      <p>Please check the details below before submitting your contribution request.</p>
-      <div class="review-list" id="review-list"></div>
-      <div class="demo-notice"><strong>Demo payment flow</strong><span>No payment will be taken on this static site. Live transactions require verified merchant credentials and a secure backend.</span></div>
-      <div class="flow-actions"><button class="btn btn-ghost modal-back" data-back="2">← Back</button><button class="btn btn-primary" id="modal-submit">Submit contribution →</button></div>
-    </div>
-    <div class="flow-success" data-flow-step="success" hidden>
-      <div class="success-icon">✓</div><div class="eyebrow">CONTRIBUTION RECEIVED</div><h2>Thank you for helping care reach further.</h2><p>Your request has been recorded in this demo workflow.</p><div class="reference-box"><span>REFERENCE</span><b id="contribution-reference">SF-000000</b></div><button class="btn btn-primary" id="success-close">Done →</button>
-    </div>
-    <small class="modal-note">Serenity Health Foundation · Yaoundé, Cameroon</small>
+    <div id="modal-content"></div>
   </div>
 </div>
-<script src="assets/app.js"></script><script>
+<script src="assets/app.js"></script>
+<script>
 (function(){
- const modal=document.getElementById('donation-modal');
- if(!modal) return;
- const summary=document.getElementById('modal-summary-box');
- const money=document.getElementById('money-panel'), goods=document.getElementById('goods-panel');
- let mode='money', amount=0, selectedGoods=[], payment='Stripe', currentStep=1;
- const qs=s=>modal.querySelector(s), qsa=s=>Array.from(modal.querySelectorAll(s));
- const setStep=(step)=>{
-   currentStep=step;
-   qsa('.flow-step').forEach(x=>x.classList.toggle('active',x.dataset.flowStep===String(step)));
-   qsa('.flow-dot').forEach(x=>x.classList.toggle('active',Number(x.dataset.step)<=step));
-   updateReview();
- };
- const updateSummary=()=>{
-   summary.textContent=mode==='money'?`Monetary contribution · FCFA ${Number(amount||0).toLocaleString()}`:`Goods support · ${selectedGoods.join(' · ')}`;
- };
- const openModal=()=>{
-   updateSummary(); setStep(1); modal.classList.add('open'); modal.style.display='flex'; modal.setAttribute('aria-hidden','false'); document.body.classList.add('modal-open');
-   setTimeout(()=>qs('#donor-name')?.focus(),50);
- };
- const closeModal=()=>{modal.classList.remove('open'); modal.style.display='none'; modal.setAttribute('aria-hidden','true'); document.body.classList.remove('modal-open'); setStep(1);};
- const validEmail=v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
- const validateStep1=()=>{
-   const name=qs('#donor-name').value.trim(), email=qs('#donor-email').value.trim();
-   if(!name){alert('Please enter your full name.');qs('#donor-name').focus();return false;}
-   if(!validEmail(email)){alert('Please enter a valid email address.');qs('#donor-email').focus();return false;}
-   return true;
- };
- const validateStep2=()=>{
-   if(payment==='Stripe'){
-     if(!qs('#card-name').value.trim() || !qs('#card-number').value.trim() || !qs('#card-expiry').value.trim()){alert('Please complete the card details for this demo.');return false;}
-   } else if(!qs('#mobile-number').value.trim()) { alert('Please enter the mobile money number.'); qs('#mobile-number').focus(); return false; }
-   return true;
- };
- const updatePaymentFields=()=>{
-   qs('#stripe-fields').hidden=payment!=='Stripe'; qs('#mobile-fields').hidden=payment==='Stripe';
- };
- const updateReview=()=>{
-   const review=qs('#review-list'); if(!review) return;
-   if(currentStep!==3) return;
-   const name=qs('#donor-name').value.trim()||'—', email=qs('#donor-email').value.trim()||'—';
-   const contribution=mode==='money'?`FCFA ${Number(amount||0).toLocaleString()}`:selectedGoods.join(', ');
-   review.innerHTML=`<div><span>Support</span><b>${mode==='money'?'Financial contribution':'Goods contribution'}</b></div><div><span>Selection</span><b>${contribution}</b></div><div><span>Contributor</span><b>${name}</b></div><div><span>Email</span><b>${email}</b></div><div><span>Payment</span><b>${payment}</b></div>`;
- };
- document.querySelectorAll('.donation-tab').forEach(tab=>tab.addEventListener('click',()=>{mode=tab.dataset.mode;document.querySelectorAll('.donation-tab').forEach(x=>x.classList.toggle('active',x===tab));money.classList.toggle('active',mode==='money');goods.classList.toggle('active',mode==='goods');}));
- document.querySelectorAll('#amounts button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#amounts button').forEach(x=>x.classList.remove('active'));b.classList.add('active');amount=Number(b.dataset.amount);qs('#custom-amount').value='';}));
- qs('#custom-amount')?.addEventListener('input',e=>{amount=Number(e.target.value||0);document.querySelectorAll('#amounts button').forEach(x=>x.classList.remove('active'));});
- document.querySelectorAll('.goods-select-grid button').forEach(b=>b.addEventListener('click',()=>{const good=b.dataset.good;if(!selectedGoods.includes(good))selectedGoods.push(good);b.classList.toggle('selected',selectedGoods.includes(good));b.querySelector('span').textContent=selectedGoods.includes(good)?'✓':'+';qs('#goods-summary').textContent=selectedGoods.length?selectedGoods.join(' · '):'No goods selected yet.';}));
- document.querySelectorAll('.cause-select').forEach(b=>b.addEventListener('click',()=>{document.querySelector('.donation-tab[data-mode="goods"]').click();const target=document.querySelector('.goods-select-grid button[data-good="'+b.dataset.good+'"]');if(target&&!selectedGoods.includes(b.dataset.good)){target.click();}document.getElementById('donate').scrollIntoView({behavior:'smooth'});}));
- qs('#money-continue').addEventListener('click',()=>{if(amount<500){alert('Please select or enter a contribution of at least FCFA 500.');return}mode='money';openModal();});
- qs('#goods-continue').addEventListener('click',()=>{if(!selectedGoods.length){alert('Please select at least one goods category.');return}mode='goods';openModal();});
- qsa('.modal-close,.modal-backdrop').forEach(x=>x.addEventListener('click',closeModal));
- qsa('.payment-method').forEach(b=>b.addEventListener('click',()=>{qsa('.payment-method').forEach(x=>x.classList.remove('active'));b.classList.add('active');payment=b.dataset.payment;updatePaymentFields();}));
- qsa('.modal-next').forEach(btn=>btn.addEventListener('click',()=>{const next=Number(btn.dataset.next);if(currentStep===1&&!validateStep1())return;if(currentStep===2&&!validateStep2())return;setStep(next);}));
- qsa('.modal-back').forEach(btn=>btn.addEventListener('click',()=>setStep(Number(btn.dataset.back))));
- qs('#modal-submit').addEventListener('click',()=>{const reference='SF-'+Math.random().toString(36).slice(2,8).toUpperCase();qs('#contribution-reference').textContent=reference; qsa('.flow-step').forEach(x=>x.classList.remove('active'));qs('.flow-success').hidden=false;currentStep='success';qsa('.flow-dot').forEach(x=>x.classList.add('active'));});
- qs('#success-close').addEventListener('click',closeModal);
- document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal();});
- updatePaymentFields();
+  const modal=document.getElementById('donation-modal');
+  const content=document.getElementById('modal-content');
+  const moneyPanel=document.getElementById('money-panel');
+  const goodsPanel=document.getElementById('goods-panel');
+  const amountButtons=[...document.querySelectorAll('#amounts button')];
+  const customAmount=document.getElementById('custom-amount');
+  const goodsSummary=document.getElementById('goods-summary');
+  let mode='money', amount=0, goods={}, step=1, payment='Stripe', lastFocus=null, donor={name:'',email:'',phone:''};
+
+  const esc=(value)=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+  const formatMoney=(n)=>Number(n||0).toLocaleString('en-US');
+  const goodsList=()=>Object.entries(goods).filter(([,qty])=>qty>0).map(([name,qty])=>({name,qty}));
+  const goodsText=()=>goodsList().map(x=>`${x.name} × ${x.qty}`).join(' · ');
+  const reference=()=>`SF-${new Date().getFullYear()}-${Math.random().toString(36).slice(2,8).toUpperCase()}`;
+
+  function renderGoodsSummary(){
+    const list=goodsList();
+    goodsSummary.innerHTML=list.length?`<div class="goods-selection">${list.map(x=>`<div class="goods-item"><strong>${esc(x.name)}</strong><div class="qty-control"><button type="button" data-qty="minus" data-good="${esc(x.name)}">−</button><span>${x.qty}</span><button type="button" data-qty="plus" data-good="${esc(x.name)}">+</button></div></div>`).join('')}</div>`:'No goods selected yet.';
+    document.querySelectorAll('.goods-select-grid button').forEach(b=>b.classList.toggle('selected',!!goods[b.dataset.good]));
+    goodsSummary.querySelectorAll('[data-qty]').forEach(b=>b.addEventListener('click',()=>{
+      const good=b.dataset.good; goods[good]=Math.max(0,(goods[good]||0)+(b.dataset.qty==='plus'?1:-1)); if(!goods[good]) delete goods[good]; renderGoodsSummary();
+    }));
+  }
+
+  function openModal(){
+    lastFocus=document.activeElement; step=1; renderModal(); modal.style.display='flex'; modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); document.body.classList.add('modal-open'); setTimeout(()=>document.getElementById('donor-name')?.focus(),50);
+  }
+  function closeModal(){ modal.classList.remove('open'); modal.style.display='none'; modal.setAttribute('aria-hidden','true'); document.body.classList.remove('modal-open'); lastFocus?.focus(); }
+
+  function stepper(){return `<div class="contribution-steps"><span class="contribution-step ${step>=1?'active':''}">1 · Details</span><span class="contribution-step ${step>=2?'active':''}">2 · Review & payment</span><span class="contribution-step ${step>=3?'active':''}">3 · Confirmation</span></div>`}
+  function baseTitle(){return mode==='money'?'Complete your support.':'Tell us how you want to help.'}
+  function renderModal(){
+    if(step===3){
+      const ref=reference();
+      content.innerHTML=`${stepper()}<div class="success-state"><div class="success-icon">✓</div><div class="eyebrow">CONTRIBUTION REQUEST RECEIVED</div><h2>Thank you for supporting Serenity.</h2><p>Your ${mode==='money'?'financial contribution request':'goods support request'} has been recorded in this demo workflow.</p><div class="reference">Reference ${ref}</div><p class="modal-note">A live receipt or payment confirmation will be issued after the verified payment/donation backend is connected.</p><button class="btn btn-primary modal-submit" id="success-close">Done</button></div>`;
+      document.getElementById('success-close').addEventListener('click',closeModal); return;
+    }
+    if(step===1){
+      content.innerHTML=`<div class="eyebrow">SECURE CONTRIBUTION</div><h2 id="modal-title">${baseTitle()}</h2><p>Enter your contact details so Serenity can associate your contribution with a confirmation.</p>${stepper()}<div class="modal-summary-box">${mode==='money'?`Monetary contribution: <strong>FCFA ${formatMoney(amount)}</strong>`:`Goods support: <strong>${esc(goodsText())}</strong>`}</div><label>Full name<input id="donor-name" autocomplete="name" placeholder="Your full name" value="${esc(donor.name)}"></label><label>Email address<input id="donor-email" type="email" autocomplete="email" placeholder="you@example.com" value="${esc(donor.email)}"></label><label>Phone number<input id="donor-phone" type="tel" autocomplete="tel" placeholder="+237 ..." value="${esc(donor.phone)}"></label><div class="form-error" id="form-error"></div><div class="modal-actions"><button class="btn modal-back" id="modal-cancel">Cancel</button><button class="btn btn-primary" id="details-next">Continue →</button></div>`;
+      document.getElementById('modal-cancel').addEventListener('click',closeModal);
+      document.getElementById('details-next').addEventListener('click',()=>{const name=document.getElementById('donor-name').value.trim(),email=document.getElementById('donor-email').value.trim(),phone=document.getElementById('donor-phone').value.trim(),err=document.getElementById('form-error');if(!name||!email||!phone||!/^\S+@\S+\.\S+$/.test(email)){err.textContent='Please enter your full name, a valid email address and phone number.';err.classList.add('show');return}donor={name,email,phone};step=2;renderModal()});
+    } else {
+      content.innerHTML=`<div class="eyebrow">REVIEW CONTRIBUTION</div><h2 id="modal-title">Check everything before you continue.</h2><p>This is a demonstration checkout. No payment is charged from this website.</p>${stepper()}<div class="review-list"><div class="review-row"><span>Support type</span><strong>${mode==='money'?'Financial contribution':'Goods contribution'}</strong></div><div class="review-row"><span>Contribution</span><strong>${mode==='money'?`FCFA ${formatMoney(amount)}`:esc(goodsText())}</strong></div><div class="review-row"><span>Contributor</span><strong>${esc(donor.name)}</strong></div><div class="review-row"><span>Email</span><strong>${esc(donor.email)}</strong></div><div class="review-row"><span>Phone</span><strong>${esc(donor.phone)}</strong></div></div><div class="eyebrow small-label">SELECT PAYMENT METHOD</div><div class="payment-methods"><button class="payment-method ${payment==='Stripe'?'active':''}" data-payment="Stripe"><b>Stripe</b><span>Card payment</span></button><button class="payment-method ${payment==='MTN MoMo'?'active':''}" data-payment="MTN MoMo"><b>MTN MoMo</b><span>Mobile money</span></button><button class="payment-method ${payment==='Orange Money'?'active':''}" data-payment="Orange Money"><b>Orange Money</b><span>Mobile money</span></button></div><div class="form-error" id="form-error"></div><div class="modal-actions"><button class="btn modal-back" id="review-back">← Back</button><button class="btn btn-primary" id="confirm-request">Confirm request →</button></div><small class="modal-note">Demo only. Live transactions require verified merchant credentials and a secure backend.</small>`;
+      document.querySelectorAll('.payment-method').forEach(b=>b.addEventListener('click',()=>{payment=b.dataset.payment;document.querySelectorAll('.payment-method').forEach(x=>x.classList.toggle('active',x===b))}));
+      document.getElementById('review-back').addEventListener('click',()=>{step=1;renderModal()});
+      document.getElementById('confirm-request').addEventListener('click',()=>{step=3;renderModal()});
+    }
+  }
+
+  document.querySelectorAll('.donation-tab').forEach(tab=>tab.addEventListener('click',()=>{mode=tab.dataset.mode;document.querySelectorAll('.donation-tab').forEach(x=>x.classList.toggle('active',x===tab));moneyPanel.classList.toggle('active',mode==='money');goodsPanel.classList.toggle('active',mode==='goods')}));
+  amountButtons.forEach(b=>b.addEventListener('click',()=>{amount=Number(b.dataset.amount);amountButtons.forEach(x=>x.classList.toggle('active',x===b));customAmount.value=''}));
+  customAmount.addEventListener('input',e=>{amount=Number(e.target.value||0);amountButtons.forEach(x=>x.classList.remove('active'))});
+  document.querySelectorAll('.goods-select-grid button').forEach(b=>b.addEventListener('click',()=>{const good=b.dataset.good;goods[good]=goods[good]?0:1;if(!goods[good])delete goods[good];renderGoodsSummary()}));
+  document.getElementById('money-continue').addEventListener('click',()=>{if(amount<500){alert('Please select or enter a contribution of at least FCFA 500.');return}mode='money';openModal()});
+  document.getElementById('goods-continue').addEventListener('click',()=>{if(!goodsList().length){alert('Please select at least one goods category.');return}mode='goods';openModal()});
+  document.querySelectorAll('.cause-select').forEach(b=>b.addEventListener('click',()=>{mode='goods';document.querySelector('.donation-tab[data-mode="goods"]').click();goods[b.dataset.good]=goods[b.dataset.good]||1;renderGoodsSummary();document.getElementById('donate').scrollIntoView({behavior:'smooth',block:'center'})}));
+  document.querySelectorAll('.modal-close,.modal-backdrop').forEach(x=>x.addEventListener('click',closeModal));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+  renderGoodsSummary();
 })();
-</script><script>
-(function(){
- const modal=document.getElementById('donation-modal'), summary=document.getElementById('modal-summary-box'), money=document.getElementById('money-panel'), goods=document.getElementById('goods-panel');
- let mode='money', amount=0, selectedGoods=[];
- const openModal=()=>{modal.classList.add('open');modal.style.display='flex';modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');summary.textContent=mode==='money'?`Monetary contribution: FCFA ${Number(amount||0).toLocaleString()}`:`Goods support: ${selectedGoods.join(', ')}`};
- const closeModal=()=>{modal.classList.remove('open');modal.style.display='none';modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')};
- document.querySelectorAll('.donation-tab').forEach(tab=>tab.addEventListener('click',()=>{mode=tab.dataset.mode;document.querySelectorAll('.donation-tab').forEach(x=>x.classList.toggle('active',x===tab));money.classList.toggle('active',mode==='money');goods.classList.toggle('active',mode==='goods')}));
- document.querySelectorAll('#amounts button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#amounts button').forEach(x=>x.classList.remove('active'));b.classList.add('active');amount=Number(b.dataset.amount);document.getElementById('custom-amount').value=''}));
- document.getElementById('custom-amount').addEventListener('input',e=>{amount=Number(e.target.value||0);document.querySelectorAll('#amounts button').forEach(x=>x.classList.remove('active'))});
- document.querySelectorAll('.goods-select-grid button,.cause-select').forEach(b=>b.addEventListener('click',()=>{const good=b.dataset.good;if(!selectedGoods.includes(good))selectedGoods.push(good);document.getElementById('goods-summary').textContent=selectedGoods.length?selectedGoods.join(' · '):'No goods selected yet.'}));
- document.getElementById('money-continue').addEventListener('click',()=>{if(amount<500){alert('Please select or enter a contribution of at least FCFA 500.');return}mode='money';openModal()});
- document.getElementById('goods-continue').addEventListener('click',()=>{if(!selectedGoods.length){alert('Please select at least one goods category.');return}mode='goods';openModal()});
- document.querySelectorAll('.modal-close,.modal-backdrop').forEach(x=>x.addEventListener('click',closeModal));
- document.querySelectorAll('.payment-method').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.payment-method').forEach(x=>x.classList.remove('active'));b.classList.add('active')}));
- document.getElementById('modal-submit').addEventListener('click',()=>{const name=document.getElementById('donor-name').value.trim();const email=document.getElementById('donor-email').value.trim();if(!name||!email){alert('Please enter your name and email address.');return}alert('Thank you, '+name+'. Your contribution request has been recorded in this demo workflow. A live receipt will be generated once payment processing is connected.');closeModal()});
- document.querySelectorAll('.cause-select').forEach(b=>b.addEventListener('click',()=>{document.querySelector('.donation-tab[data-mode="goods"]').click();document.getElementById('donate').scrollIntoView({behavior:'smooth'})}));
-})();
-</script></body></html>
+</script>
+</body></html>
