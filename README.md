@@ -1,16 +1,12 @@
-# Serenity Medical Center — Cameroon
+# Serenity Medical Center — Foundation
 
-## Pass 29 — Foundation review bridge
+Latest Foundation contribution-flow package.
 
-This package contains the complete Serenity Medical Center multi-page static website.
+## Included in this pass
+- Refined contribution copy and live-integration disclaimer.
+- Payment methods are explicitly presented as available at the review stage.
+- Payment selection in the review step starts unselected and must be chosen before a financial contribution request can be confirmed.
+- Clear demo/no-charge messaging throughout the flow.
+- Existing money/goods contribution, review, fulfilment, confirmation and accessibility improvements retained.
 
-### Latest Foundation improvements
-- Contribution amount buttons now have clearer selected states and accessible pressed states.
-- Payment options are explicitly labelled as available at the review stage, avoiding the impression that live processing is already connected.
-- The Foundation's “Review support” action now moves directly into the goods contribution workflow instead of merely scrolling back to the form.
-- Contribution amount and goods selection flows retain their existing validation and confirmation states.
-- Responsive amount controls have been refined for tablet and mobile widths.
-- Existing contribution guidance, cause selection, trust messaging and demo checkout remain intact.
-
-### Important
-Payment processing remains demonstration/integration-ready only. No live transaction is charged by the static site.
+This is a front-end demonstration. Live payment processing requires a secure backend and verified merchant credentials.
