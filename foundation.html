@@ -3,8 +3,50 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Serenity Health Foundation — support healthcare access, essential medical goods and community-focused initiatives in Yaoundé, Cameroon.">
-<link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css?v=17">
 <title>Serenity Health Foundation | Give Care. Extend Hope.</title>
+
+<style id="foundation-pass-17-repair">
+/* PASS 17 — Foundation rendering/cache repair */
+.foundation-page .foundation-donate{background:#f4f8f6}
+.foundation-page .donation-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:75px;align-items:center}
+.foundation-page .donation-copy h2{max-width:560px}
+.foundation-page .donation-tabs{display:flex;gap:5px;padding:5px;background:#e7f1ed;border-radius:999px;width:max-content;margin:32px 0 25px}
+.foundation-page .donation-tab{border:0;background:transparent;padding:11px 18px;border-radius:999px;font-size:11px;font-weight:800;color:#54706c;cursor:pointer}
+.foundation-page .donation-tab.active{background:#063b3b;color:#fff}
+.foundation-page .donation-panel{display:none}
+.foundation-page .donation-panel.active{display:block}
+.foundation-page .amounts.large{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 12px}
+.foundation-page .amounts.large button{border:1px solid #d7e6e1;background:#fff;border-radius:999px;padding:11px 14px;font-size:10px;font-weight:800;cursor:pointer}
+.foundation-page .amounts.large button.active{background:#063b3b;color:#fff;border-color:#063b3b}
+.foundation-page .donate-line{display:flex;gap:8px;margin:12px 0}
+.foundation-page .donate-line input{flex:1;width:100%;border:1px solid #d7e6e1;border-radius:11px;padding:12px;outline:0}
+.foundation-page .payment-ready{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:16px}
+.foundation-page .payment-ready span{font-size:8px;color:#08736d;font-weight:800;letter-spacing:.12em;margin-right:5px}
+.foundation-page .payment-ready b{font-size:9px;background:#fff;border:1px solid #d7e6e1;border-radius:999px;padding:7px 10px}
+.foundation-page .goods-select-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.foundation-page .goods-select-grid button{border:1px solid #d7e6e1;background:#fff;border-radius:13px;padding:14px;text-align:left;font-size:10px;font-weight:800;cursor:pointer;color:#063b3b;display:flex;justify-content:space-between}
+.foundation-page .goods-summary{padding:12px;border-radius:12px;background:#fff;border:1px dashed #a9c9c0;color:#607b77;font-size:10px;margin-bottom:12px;min-height:42px}
+.foundation-page .donation-visual{min-height:570px;border-radius:28px;background-size:cover;background-position:center;position:relative;overflow:hidden;box-shadow:0 25px 70px rgba(5,51,51,.12)}
+.foundation-page .donation-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,44,44,.72),transparent 58%)}
+.foundation-page .visual-note{position:absolute;z-index:1;bottom:30px;left:30px;right:30px;color:#fff;display:flex;flex-direction:column;gap:5px}
+.foundation-page .visual-note strong{font:800 24px Manrope}.foundation-page .visual-note span{font-size:11px;color:#d5e4e0}
+.foundation-page .donation-modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:20px}
+.foundation-page .donation-modal.open{display:flex}
+.foundation-page .modal-backdrop{position:absolute;inset:0;background:rgba(1,29,30,.72);backdrop-filter:blur(8px)}
+.foundation-page .modal-card{position:relative;z-index:1;width:min(560px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:25px;padding:35px;box-shadow:0 30px 100px rgba(0,0,0,.25)}
+.foundation-page .modal-close{position:absolute;right:18px;top:15px;border:0;background:#eef5f2;border-radius:50%;width:34px;height:34px;font-size:22px;cursor:pointer;color:#063b3b}
+.foundation-page .modal-card h2{font:800 35px Manrope;line-height:1.05;letter-spacing:-.04em;margin:10px 0}.foundation-page .modal-card>p{font-size:11px;color:#607b77}
+.foundation-page .modal-summary-box{background:#edf7f3;border-radius:13px;padding:15px;margin:18px 0;font-size:11px;font-weight:800;color:#063b3b}
+.foundation-page .modal-card label{display:block;font-size:9px;font-weight:800;margin:12px 0}.foundation-page .modal-card input{display:block;width:100%;border:1px solid #d7e6e1;border-radius:11px;padding:12px;margin-top:6px;outline:0}
+.foundation-page .payment-methods{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:20px 0}
+.foundation-page .payment-method{border:1px solid #d7e6e1;background:#fff;border-radius:12px;padding:13px 9px;text-align:left;cursor:pointer}.foundation-page .payment-method.active{border-color:#08736d;background:#edf7f3}
+.foundation-page .payment-method b,.foundation-page .payment-method span{display:block}.foundation-page .payment-method b{font-size:10px}.foundation-page .payment-method span{font-size:8px;color:#607b77;margin-top:3px}
+.foundation-page .modal-submit{width:100%;justify-content:center}.foundation-page .modal-note{display:block;color:#7d9692;font-size:8px;line-height:1.5;margin-top:13px;text-align:center}
+.foundation-page.modal-open{overflow:hidden}
+@media(max-width:850px){.foundation-page .donation-layout{grid-template-columns:1fr;gap:30px}.foundation-page .donation-visual{min-height:430px}}
+@media(max-width:650px){.foundation-page .goods-select-grid,.foundation-page .payment-methods{grid-template-columns:1fr}.foundation-page .donation-tabs{width:100%}.foundation-page .donation-tab{flex:1}.foundation-page .donation-visual{min-height:340px}.foundation-page .modal-card{padding:28px 20px}}
+</style>
 </head>
 <body class="foundation-page">
 <div class="topbar">YAOUNDÉ · CAMEROON <span>Care · Innovation · Quality</span> <a href="contact.html">+237 683 539 388</a></div>
@@ -34,13 +76,13 @@
 </main>
 <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="assets/serenity-logo.jpg" alt=""><span><strong>Serenity</strong><small>MEDICAL CENTER</small></span></a><p>Care · Innovation · Quality.<br>Patient-centered healthcare in Yaoundé.</p></div><div><b>Explore</b><a href="about.html">About Serenity</a><a href="services.html">Services</a><a href="digital-health.html">Digital Health</a><a href="community.html">Community</a></div><div><b>Support</b><a href="foundation.html">Health Foundation</a><a href="partner.html">Become a Partner</a><a href="contact.html">Contact</a><a href="contact.html">Emergency support</a></div><div><b>Visit</b><span>Maison Damas<br>Chris Complex<br>Yaoundé, Cameroon</span><span>+237 683 539 388</span><span>Open 24 hours</span></div></div><div class="footer-bottom container"><span>© 2026 Serenity Medical Center. All rights reserved.</span><span>Privacy · Terms · Accessibility</span></div></footer>
 
-<div class="donation-modal" id="donation-modal" aria-hidden="true"><div class="modal-backdrop"></div><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" aria-label="Close">×</button><div class="eyebrow">SECURE CONTRIBUTION</div><h2 id="modal-title">Complete your support.</h2><p id="modal-summary">Review your contribution and choose a payment method.</p><div class="modal-summary-box" id="modal-summary-box"></div><label>Full name<input id="donor-name" placeholder="Your full name"></label><label>Email address<input id="donor-email" type="email" placeholder="you@example.com"></label><div class="payment-methods"><button class="payment-method active" data-payment="Stripe"><b>Stripe</b><span>Card payment</span></button><button class="payment-method" data-payment="MTN MoMo"><b>MTN MoMo</b><span>Mobile money</span></button><button class="payment-method" data-payment="Orange Money"><b>Orange Money</b><span>Mobile money</span></button></div><button class="btn btn-primary modal-submit" id="modal-submit">Confirm contribution →</button><small class="modal-note">Demo workflow only — live payment processing requires verified merchant credentials and backend integration.</small></div></div>
+<div class="donation-modal" id="donation-modal" aria-hidden="true" style="display:none"><div class="modal-backdrop"></div><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" aria-label="Close">×</button><div class="eyebrow">SECURE CONTRIBUTION</div><h2 id="modal-title">Complete your support.</h2><p id="modal-summary">Review your contribution and choose a payment method.</p><div class="modal-summary-box" id="modal-summary-box"></div><label>Full name<input id="donor-name" placeholder="Your full name"></label><label>Email address<input id="donor-email" type="email" placeholder="you@example.com"></label><div class="payment-methods"><button class="payment-method active" data-payment="Stripe"><b>Stripe</b><span>Card payment</span></button><button class="payment-method" data-payment="MTN MoMo"><b>MTN MoMo</b><span>Mobile money</span></button><button class="payment-method" data-payment="Orange Money"><b>Orange Money</b><span>Mobile money</span></button></div><button class="btn btn-primary modal-submit" id="modal-submit">Confirm contribution →</button><small class="modal-note">Demo workflow only — live payment processing requires verified merchant credentials and backend integration.</small></div></div>
 <script src="assets/app.js"></script><script>
 (function(){
  const modal=document.getElementById('donation-modal'), summary=document.getElementById('modal-summary-box'), money=document.getElementById('money-panel'), goods=document.getElementById('goods-panel');
  let mode='money', amount=0, selectedGoods=[];
- const openModal=()=>{modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');summary.textContent=mode==='money'?`Monetary contribution: FCFA ${Number(amount||0).toLocaleString()}`:`Goods support: ${selectedGoods.join(', ')}`};
- const closeModal=()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')};
+ const openModal=()=>{modal.classList.add('open');modal.style.display='flex';modal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');summary.textContent=mode==='money'?`Monetary contribution: FCFA ${Number(amount||0).toLocaleString()}`:`Goods support: ${selectedGoods.join(', ')}`};
+ const closeModal=()=>{modal.classList.remove('open');modal.style.display='none';modal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')};
  document.querySelectorAll('.donation-tab').forEach(tab=>tab.addEventListener('click',()=>{mode=tab.dataset.mode;document.querySelectorAll('.donation-tab').forEach(x=>x.classList.toggle('active',x===tab));money.classList.toggle('active',mode==='money');goods.classList.toggle('active',mode==='goods')}));
  document.querySelectorAll('#amounts button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#amounts button').forEach(x=>x.classList.remove('active'));b.classList.add('active');amount=Number(b.dataset.amount);document.getElementById('custom-amount').value=''}));
  document.getElementById('custom-amount').addEventListener('input',e=>{amount=Number(e.target.value||0);document.querySelectorAll('#amounts button').forEach(x=>x.classList.remove('active'))});
