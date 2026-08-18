@@ -1101,3 +1101,135 @@ main{position:relative;z-index:1}
   .site-header.scrolled .brand strong{font-size:15px}
   .site-header.scrolled .nav{top:58px}
 }
+
+
+/* =========================================================
+   PASS 35 — COMMUNITY PAGE ALIGNMENT & RESPONSIVE POLISH
+   Keep the master scroll header untouched; this pass only fixes
+   the community page's document offset and editorial alignment.
+   ========================================================= */
+.community-page main{
+  padding-top:78px;
+}
+.community-page .community-hero{
+  min-height:470px;
+  margin-top:0;
+}
+.community-page .community-hero .container{
+  padding-top:28px;
+  padding-bottom:82px;
+}
+.community-page .community-intro{
+  grid-template-columns:minmax(0,1fr) minmax(300px,420px);
+  gap:72px;
+  align-items:end;
+}
+.community-page .community-intro>div{min-width:0}
+.community-page .community-intro>p{
+  max-width:420px;
+  justify-self:end;
+}
+.community-page .community-toolbar-pro{
+  grid-template-columns:minmax(0,1fr) 190px 78px;
+}
+.community-page .community-toolbar-pro label{min-width:0}
+.community-page .community-toolbar-pro input,
+.community-page .community-toolbar-pro select{
+  width:100%;
+}
+.community-page .featured-article{
+  grid-template-columns:minmax(0,1.16fr) minmax(360px,.84fr);
+}
+.community-page .featured-image,
+.community-page .featured-copy{
+  min-width:0;
+}
+.community-page .featured-copy{
+  padding:52px 48px;
+}
+.community-page .article-grid-pro{
+  align-items:stretch;
+}
+.community-page .article-tile{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+.community-page .article-tile-copy{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+.community-page .article-tile-copy p{
+  flex:1;
+}
+.community-page .community-care-cta>.container{
+  align-items:center;
+}
+
+@media(max-width:1100px){
+  .community-page .community-intro{
+    grid-template-columns:minmax(0,1fr) minmax(280px,360px);
+    gap:45px;
+  }
+  .community-page .featured-article{
+    grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);
+  }
+  .community-page .featured-copy{
+    padding:42px 36px;
+  }
+}
+
+@media(max-width:900px){
+  .community-page main{padding-top:78px}
+  .community-page .community-intro{
+    grid-template-columns:1fr;
+    gap:18px;
+    align-items:start;
+  }
+  .community-page .community-intro>p{
+    max-width:680px;
+    justify-self:start;
+    margin-bottom:0;
+  }
+  .community-page .community-toolbar-pro{
+    grid-template-columns:minmax(0,1fr) 190px 78px;
+  }
+  .community-page .featured-article{
+    grid-template-columns:1fr;
+  }
+  .community-page .featured-image{min-height:340px}
+  .community-page .featured-copy{padding:38px}
+}
+
+@media(max-width:650px){
+  .community-page main{padding-top:64px}
+  .community-page .community-hero{
+    min-height:430px;
+  }
+  .community-page .community-hero .container{
+    padding-top:20px;
+    padding-bottom:58px;
+  }
+  .community-page .community-intro h2{
+    font-size:38px;
+  }
+  .community-page .community-toolbar-pro{
+    grid-template-columns:1fr;
+    gap:9px;
+    padding:13px;
+  }
+  .community-page .filter-clear{
+    width:100%;
+  }
+  .community-page .featured-image{min-height:250px}
+  .community-page .featured-copy{padding:28px 24px 30px}
+  .community-page .featured-copy h2{font-size:35px}
+  .community-page .article-grid-pro{grid-template-columns:1fr}
+  .community-page .article-image{height:230px}
+  .community-page .community-care-cta{padding:65px 0}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .community-page .article-tile{transition:none!important}
+}
