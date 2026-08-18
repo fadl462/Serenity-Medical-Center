@@ -1233,3 +1233,98 @@ main{position:relative;z-index:1}
 @media(prefers-reduced-motion:reduce){
   .community-page .article-tile{transition:none!important}
 }
+
+/* =========================================================
+   PASS 36 — COMMUNITY FINAL VISUAL POLISH
+   Precision spacing, hierarchy and card rhythm without changing
+   the approved global header behaviour.
+   ========================================================= */
+.community-page .community-library > .container{
+  max-width:1180px;
+}
+.community-page .community-intro{
+  margin-bottom:34px;
+}
+.community-page .community-intro h2{
+  max-width:680px;
+}
+.community-page .community-intro>p{
+  max-width:400px;
+}
+.community-page .community-toolbar-pro{
+  margin-bottom:32px;
+}
+.community-page .featured-article{
+  min-height:400px;
+  margin-bottom:62px;
+}
+.community-page .featured-image{
+  min-height:400px;
+}
+.community-page .featured-copy{
+  padding:42px 44px;
+}
+.community-page .featured-copy h2{
+  font-size:clamp(36px,3.55vw,48px);
+  max-width:430px;
+  margin:13px 0 12px;
+}
+.community-page .featured-copy p{
+  max-width:400px;
+  margin:0;
+}
+.community-page .featured-meta{
+  margin:17px 0 24px;
+}
+.community-page .library-heading{
+  margin-bottom:18px;
+}
+.community-page .article-grid-pro{
+  gap:16px;
+}
+.community-page .article-image{
+  height:215px;
+}
+.community-page .article-tile-copy{
+  padding:18px 19px 20px;
+}
+.community-page .article-tile-copy h2{
+  font-size:20px;
+  margin:8px 0 7px;
+}
+.community-page .article-tile-copy p{
+  min-height:40px;
+  margin-bottom:13px;
+  line-height:1.55;
+}
+.community-page .community-care-cta{
+  margin-top:82px;
+}
+
+@media(max-width:1100px){
+  .community-page .featured-article{min-height:380px}
+  .community-page .featured-image{min-height:380px}
+  .community-page .featured-copy{padding:36px 32px}
+  .community-page .article-image{height:205px}
+}
+
+@media(max-width:900px){
+  .community-page .community-intro{margin-bottom:28px}
+  .community-page .featured-article{margin-bottom:52px}
+  .community-page .featured-image{min-height:320px}
+  .community-page .featured-copy{padding:34px}
+  .community-page .article-image{height:210px}
+  .community-page .community-care-cta{margin-top:64px}
+}
+
+@media(max-width:650px){
+  .community-page .community-intro{margin-bottom:24px}
+  .community-page .community-toolbar-pro{margin-bottom:24px}
+  .community-page .featured-article{margin-bottom:46px}
+  .community-page .featured-image{min-height:245px}
+  .community-page .featured-copy{padding:27px 23px 29px}
+  .community-page .featured-copy h2{font-size:34px}
+  .community-page .library-heading{margin-bottom:15px}
+  .community-page .article-image{height:220px}
+  .community-page .community-care-cta{margin-top:52px}
+}
