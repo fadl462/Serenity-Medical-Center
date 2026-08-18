@@ -1066,3 +1066,38 @@ main{position:relative;z-index:1}
   .site-header.scrolled .brand strong,.site-header.is-scrolled .brand strong{font-size:14px}
   .site-header.scrolled .nav,.site-header.is-scrolled .nav{top:54px}
 }
+
+/* =========================================================
+   PASS 34 — ALWAYS-VISIBLE SCROLL HEADER
+   The navigation must never scroll away. It starts below the
+   utility bar and compacts to the very top once the page moves.
+   ========================================================= */
+.site-header{
+  position:fixed !important;
+  top:31px !important;
+  left:0;
+  right:0;
+  z-index:9999;
+  will-change:top,height,padding,box-shadow;
+  transition:top .22s ease,height .22s ease,padding .22s ease,box-shadow .22s ease,background .22s ease;
+}
+.site-header.scrolled{
+  position:fixed !important;
+  top:0 !important;
+  height:64px;
+  box-shadow:0 10px 35px rgba(7,59,60,.10);
+}
+.site-header.scrolled .brand img{width:32px;height:32px}
+.site-header.scrolled .brand strong{font-size:16px}
+.site-header.scrolled .brand small{font-size:6px}
+.site-header.scrolled .nav{gap:18px;font-size:11px}
+.site-header.scrolled .nav-cta{padding:9px 15px}
+.site-header.scrolled .language-switch a{min-width:23px;height:20px}
+
+@media(max-width:650px){
+  .site-header{top:27px !important;height:64px}
+  .site-header.scrolled{top:0 !important;height:58px}
+  .site-header.scrolled .brand img{width:29px;height:29px}
+  .site-header.scrolled .brand strong{font-size:15px}
+  .site-header.scrolled .nav{top:58px}
+}

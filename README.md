@@ -10,3 +10,6 @@ Latest Foundation contribution-flow package.
 - Existing money/goods contribution, review, fulfilment, confirmation and accessibility improvements retained.
 
 This is a front-end demonstration. Live payment processing requires a secure backend and verified merchant credentials.
+
+### Pass 34 — Always-visible scrolling header
+The global header is now fixed from page load. It begins below the utility bar and transitions to the top of the viewport when scrolling, with a compact logo/navigation treatment. This prevents the navigation from disappearing if a scroll event is delayed or interrupted.
