@@ -40,3 +40,73 @@ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classLi
     if(active) link.classList.add('active');
   });
 })();
+
+
+/* Gallery filters + accessible lightbox */
+(function(){
+  const page=document.querySelector('.gallery-page');
+  if(!page) return;
+  const items=[...page.querySelectorAll('.gallery-item')];
+  const filters=[...page.querySelectorAll('[data-gallery-filter]')];
+  const empty=page.querySelector('.gallery-empty');
+  const box=page.querySelector('#galleryLightbox');
+  const image=box?.querySelector('img');
+  const title=box?.querySelector('h3');
+  const desc=box?.querySelector('p');
+  const count=box?.querySelector('.gallery-lightbox-count');
+  let visible=items.slice();
+  let current=0;
+
+  const render=(filter)=>{
+    visible=[];
+    items.forEach(item=>{
+      const show=filter==='all'||item.dataset.category===filter;
+      item.hidden=!show;
+      if(show) visible.push(item);
+    });
+    if(empty) empty.hidden=visible.length!==0;
+  };
+  filters.forEach(button=>button.addEventListener('click',()=>{
+    filters.forEach(x=>x.classList.remove('active'));
+    button.classList.add('active');
+    render(button.dataset.galleryFilter);
+  }));
+
+  const update=()=>{
+    const item=visible[current];
+    if(!item||!box) return;
+    const img=item.querySelector('img');
+    image.src=img.currentSrc||img.src;
+    image.alt=img.alt;
+    title.textContent=item.dataset.title||'';
+    desc.textContent=item.dataset.description||'';
+    count.textContent=String(current+1).padStart(2,'0')+' / '+String(visible.length).padStart(2,'0');
+  };
+  const open=(index)=>{
+    current=index;
+    update();
+    box.classList.add('open');
+    box.setAttribute('aria-hidden','false');
+    document.body.classList.add('gallery-lock');
+  };
+  const close=()=>{
+    box.classList.remove('open');
+    box.setAttribute('aria-hidden','true');
+    document.body.classList.remove('gallery-lock');
+  };
+  page.querySelectorAll('.gallery-open').forEach(button=>button.addEventListener('click',()=>{
+    const item=button.closest('.gallery-item');
+    open(visible.indexOf(item));
+  }));
+  box?.querySelector('.gallery-close')?.addEventListener('click',close);
+  box?.addEventListener('click',e=>{if(e.target===box) close();});
+  box?.querySelector('.gallery-prev')?.addEventListener('click',()=>{current=(current-1+visible.length)%visible.length;update();});
+  box?.querySelector('.gallery-next')?.addEventListener('click',()=>{current=(current+1)%visible.length;update();});
+  document.addEventListener('keydown',e=>{
+    if(!box?.classList.contains('open')) return;
+    if(e.key==='Escape') close();
+    if(e.key==='ArrowLeft'){current=(current-1+visible.length)%visible.length;update();}
+    if(e.key==='ArrowRight'){current=(current+1)%visible.length;update();}
+  });
+  render('all');
+})();
