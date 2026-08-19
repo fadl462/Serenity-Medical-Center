@@ -1438,11 +1438,13 @@ body.gallery-lock{overflow:hidden}
 /* =========================================================
    PARTNER PAGE — PREMIUM COLLABORATION EXPERIENCE
    ========================================================= */
-.partner-page .partner-hero{min-height:520px;background-position:center 42%}
-.partner-page .partner-hero .container{padding-bottom:64px}
+.partner-page .partner-hero{min-height:590px;background-position:center 46%;align-items:center}
+.partner-page .partner-hero .container{padding-top:72px;padding-bottom:72px}
+.partner-page .partner-hero .eyebrow{margin-bottom:0}
+.partner-page .partner-hero h1{margin-top:16px;max-width:760px}
 .partner-page .partner-hero p{max-width:650px}
-.partner-page .partner-hero .actions{margin:26px 0 0}
-.partner-hero-proof{display:flex;flex-wrap:wrap;gap:28px;margin-top:42px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2);max-width:720px}
+.partner-page .partner-hero .actions{margin:24px 0 0}
+.partner-hero-proof{display:flex;flex-wrap:wrap;gap:28px;margin-top:38px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2);max-width:720px}
 .partner-hero-proof span{font-size:9px;letter-spacing:.06em;color:#c8d8d4;text-transform:uppercase}
 .partner-hero-proof b{display:block;color:#c5ef9b;font:800 17px Manrope;letter-spacing:0;margin-bottom:2px}
 .partner-page .partner-benefits{background:#fff}
@@ -1501,8 +1503,8 @@ body.gallery-lock{overflow:hidden}
  .partner-form-layout{grid-template-columns:1fr;gap:40px}
 }
 @media(max-width:650px){
- .partner-page .partner-hero{min-height:570px}
- .partner-page .partner-hero .container{padding-bottom:48px}
+ .partner-page .partner-hero{min-height:600px;align-items:center}
+ .partner-page .partner-hero .container{padding-top:58px;padding-bottom:58px}
  .partner-page .partner-hero h1{font-size:48px}
  .partner-hero-proof{gap:15px;margin-top:30px}
  .partner-benefit-grid,.partner-model-grid,.partner-process-grid,.form-two{grid-template-columns:1fr}
