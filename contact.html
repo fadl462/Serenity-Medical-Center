@@ -218,7 +218,6 @@ linear-gradient(-35deg,transparent 46%,rgba(255,255,255,.65) 47%,rgba(255,255,25
   // Keep confirmation polished without disabling the whole form.
   form.addEventListener('submit',e=>{
     e.preventDefault();
-    e.stopImmediatePropagation();
     if(!form.checkValidity()){
       form.reportValidity();
       return;
@@ -233,7 +232,7 @@ linear-gradient(-35deg,transparent 46%,rgba(255,255,255,.65) 47%,rgba(255,255,25
     submit.hidden=true;
     form.querySelectorAll('input,select,textarea').forEach(el=>el.setAttribute('aria-disabled','true'));
     success.scrollIntoView({behavior:'smooth',block:'nearest'});
-  }, true);
+  });
 
   date.addEventListener('input',()=>date.setCustomValidity(''));
 

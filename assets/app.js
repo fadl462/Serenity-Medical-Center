@@ -251,9 +251,9 @@ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classLi
       <span>© 2026 Serenity Medical Center. All rights reserved.</span>
       <div class="footer-bottom-links">
         <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" class="footer-backtop">Back to top ↑</a>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Accessibility</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="accessibility.html">Accessibility</a>
       </div>
     </div>
   `;
