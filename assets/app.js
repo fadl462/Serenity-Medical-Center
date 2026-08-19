@@ -258,3 +258,39 @@ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classLi
     </div>
   `;
 })();
+
+/* Final responsive/accessibility helpers */
+(function(){
+  const toggle=document.querySelector('.menu-toggle');
+  const nav=document.querySelector('.nav');
+  if(toggle&&nav){
+    toggle.setAttribute('aria-expanded','false');
+    toggle.addEventListener('click',()=>{
+      const open=nav.classList.contains('open');
+      toggle.setAttribute('aria-expanded',String(!open));
+      toggle.setAttribute('aria-label',open?'Open menu':'Close menu');
+    });
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.setAttribute('aria-label','Open menu');
+    }));
+    window.addEventListener('resize',()=>{
+      if(window.innerWidth>1024){
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+        toggle.setAttribute('aria-label','Open menu');
+      }
+    },{passive:true});
+  }
+})();
+
+(function(){
+  const today=new Date();
+  const yyyy=today.getFullYear();
+  const mm=String(today.getMonth()+1).padStart(2,'0');
+  const dd=String(today.getDate()).padStart(2,'0');
+  document.querySelectorAll('input[type="date"]').forEach(input=>{
+    input.min=`${yyyy}-${mm}-${dd}`;
+  });
+})();
