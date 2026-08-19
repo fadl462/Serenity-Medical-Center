@@ -1,0 +1,128 @@
+
+/* =========================================================
+   SERENITY FINAL HEADER + CONTACT MAP FIX
+   Add this block at the END of assets/styles.css
+   ========================================================= */
+
+/* EN / FR language switch — utility topbar */
+.topbar{
+  position:relative;
+  padding-left:180px;
+  padding-right:180px;
+}
+
+.topbar-language{
+  position:absolute;
+  right:max(24px,calc((100vw - 1180px)/2));
+  top:50%;
+  transform:translateY(-50%);
+  z-index:5;
+}
+
+.topbar-language .language-switch{
+  display:flex;
+  align-items:center;
+  gap:2px;
+  padding:2px;
+  margin:0;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  background:rgba(255,255,255,.08);
+}
+
+.topbar-language .language-switch a{
+  display:grid;
+  place-items:center;
+  min-width:27px;
+  height:20px;
+  padding:0 7px;
+  border-radius:999px;
+  color:#b8cfca;
+  font-size:8px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:.04em;
+  transition:background .2s ease,color .2s ease;
+}
+
+.topbar-language .language-switch a:hover{
+  color:#fff;
+}
+
+.topbar-language .language-switch a.active{
+  background:#fff;
+  color:#043e3e;
+  box-shadow:0 1px 5px rgba(0,0,0,.12);
+}
+
+/* Real Google map preview */
+.map-card-large{
+  position:relative;
+  isolation:isolate;
+}
+
+.map-card-large .serenity-map-frame{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  width:100%;
+  height:100%;
+  min-height:250px;
+  border:0;
+  display:block;
+  filter:saturate(.72) contrast(.96);
+}
+
+.map-card-large .map-card-copy{
+  z-index:2;
+}
+
+/* Keep the map from disappearing behind the content card. */
+.map-card-large::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(234,246,241,.18),rgba(234,246,241,0) 55%);
+}
+
+@media (max-width:700px){
+  .topbar{
+    padding-left:15px;
+    padding-right:105px;
+    justify-content:flex-start;
+    gap:8px;
+    white-space:nowrap;
+  }
+
+  .topbar-language{
+    right:15px;
+  }
+
+  .topbar-language .language-switch a{
+    min-width:25px;
+    height:19px;
+    padding:0 6px;
+  }
+
+  .map-card-large .serenity-map-frame{
+    min-height:230px;
+  }
+}
+
+@media (max-width:420px){
+  .topbar{
+    padding-right:96px;
+  }
+
+  .topbar-language{
+    right:12px;
+  }
+
+  .topbar-language .language-switch a{
+    min-width:24px;
+    height:19px;
+    padding:0 5px;
+  }
+}

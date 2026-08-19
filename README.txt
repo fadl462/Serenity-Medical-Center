@@ -1,29 +1,51 @@
-SERENITY MEDICAL CENTER — LANGUAGE SWITCH TOPBAR
+SERENITY MEDICAL CENTER — FINAL HEADER + MAP FIX
 
-Requested change:
-Move the EN / FR language switch from the main navigation into the dark utility/top menu bar.
+This is a NON-COMMIT patch. Nothing has been pushed to GitHub.
 
-IMPORTANT:
-- Nothing has been committed to GitHub.
-- You will push the change yourself.
-- This is designed as a site-wide change because all pages already use assets/app.js and assets/styles.css.
+Two problems are being fixed:
 
-Apply:
+1. EN / FR language switch
+   - The existing switch is physically moved from the white main navigation
+     into the dark utility/topbar.
+   - No duplicate language switch is created.
+   - Existing EN/FR active-state behaviour is preserved.
 
-1. Add app-js-addition.txt to the END of:
+2. Contact-page map
+   - The decorative diagonal-line placeholder is removed automatically.
+   - A real Google Maps preview is inserted into the existing map card.
+   - The existing Serenity location information card remains on top of the map.
+   - No Google Maps API key is required for this preview.
+
+APPLY:
+
+A) Open:
    assets/app.js
 
-2. Add styles-css-addition.txt to the END of:
+   Paste the complete contents of:
+   app.js-addition.txt
+   at the END of the existing file.
+
+B) Open:
    assets/styles.css
 
-The JavaScript automatically relocates the existing .language-switch into
-the .topbar on every page, so you do NOT need to edit each HTML page.
+   Paste the complete contents of:
+   styles.css-addition.txt
+   at the END of the existing file.
 
-Result:
-- EN / FR sits in the top dark utility bar.
-- Main navigation becomes cleaner and less crowded.
-- The switch retains its active-pill styling.
-- Desktop and mobile layouts are handled.
-- Existing language-switch click behaviour remains intact because the
-  existing app.js listener runs before/after the move without changing the
-  element itself.
+IMPORTANT:
+- Do not replace the existing app.js or styles.css.
+- Do not delete existing code.
+- Do not commit.
+- After pushing, hard-refresh the site with Ctrl + F5.
+
+EXPECTED RESULT:
+
+TOP BAR:
+YAOUNDÉ · CAMEROON   Care · Innovation · Quality   +237 683 539 388                 EN  FR
+
+MAIN NAV:
+About · Services · Digital Health · Foundation · Community · Gallery · Partner · Book a Visit
+
+CONTACT MAP:
+The diagonal decorative placeholder is gone and a real interactive Google Maps
+preview occupies the map area, with the Serenity location card overlaid.

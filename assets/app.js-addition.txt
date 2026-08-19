@@ -1,0 +1,36 @@
+
+/* =========================================================
+   SERENITY FINAL HEADER + CONTACT MAP FIX
+   Add this block at the END of assets/app.js
+   ========================================================= */
+(function(){
+  /* Move EN / FR from the main navigation into the utility topbar. */
+  const topbar = document.querySelector('.topbar');
+  const languageSwitch = document.querySelector('.language-switch');
+
+  if (topbar && languageSwitch && !topbar.contains(languageSwitch)) {
+    const holder = document.createElement('div');
+    holder.className = 'topbar-language';
+    holder.setAttribute('aria-label', 'Language selection');
+    holder.appendChild(languageSwitch);
+    topbar.appendChild(holder);
+  }
+
+  /* Replace the decorative contact-page map placeholder with a real map preview. */
+  const mapCard = document.querySelector('.map-card-large');
+
+  if (mapCard && !mapCard.querySelector('.serenity-map-frame')) {
+    const mapPattern = mapCard.querySelector('.map-pattern');
+    if (mapPattern) mapPattern.remove();
+
+    const map = document.createElement('iframe');
+    map.className = 'serenity-map-frame';
+    map.title = 'Serenity Medical Center location map';
+    map.loading = 'lazy';
+    map.allowFullscreen = true;
+    map.referrerPolicy = 'no-referrer-when-downgrade';
+    map.src = 'https://www.google.com/maps?q=Serenity%20Medical%20Center%20Maison%20Damas%20Yaounde%20Cameroon&output=embed';
+
+    mapCard.prepend(map);
+  }
+})();
