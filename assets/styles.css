@@ -1434,3 +1434,82 @@ body.gallery-lock{overflow:hidden}
   .gallery-lightbox-content h3{font-size:22px}
   .gallery-prev{left:8px}.gallery-next{right:8px}.gallery-close{top:10px;right:10px;min-width:70px;height:40px}
 }
+
+/* =========================================================
+   PARTNER PAGE — PREMIUM COLLABORATION EXPERIENCE
+   ========================================================= */
+.partner-page .partner-hero{min-height:520px;background-position:center 42%}
+.partner-page .partner-hero .container{padding-bottom:64px}
+.partner-page .partner-hero p{max-width:650px}
+.partner-page .partner-hero .actions{margin:26px 0 0}
+.partner-hero-proof{display:flex;flex-wrap:wrap;gap:28px;margin-top:42px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2);max-width:720px}
+.partner-hero-proof span{font-size:9px;letter-spacing:.06em;color:#c8d8d4;text-transform:uppercase}
+.partner-hero-proof b{display:block;color:#c5ef9b;font:800 17px Manrope;letter-spacing:0;margin-bottom:2px}
+.partner-page .partner-benefits{background:#fff}
+.partner-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,470px);gap:80px;align-items:end;margin-bottom:46px}
+.partner-intro h2{max-width:560px}
+.partner-intro .lead{margin:0 0 8px}
+.partner-benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.partner-benefit-grid article{position:relative;min-height:310px;padding:25px;border:1px solid var(--line);border-radius:22px;background:#fff;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s}
+.partner-benefit-grid article:nth-child(2){background:#edf8f4}
+.partner-benefit-grid article:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#b9d9d1}
+.partner-benefit-grid article>span{font-size:9px;color:var(--teal);font-weight:800}
+.partner-icon{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--deep);color:var(--lime);font:800 22px Manrope;margin:54px 0 22px}
+.partner-benefit-grid h3{font:800 24px Manrope;margin:0 0 9px}
+.partner-benefit-grid p{font-size:11px;color:var(--muted);margin:0;line-height:1.65}
+.partner-page .partner-models{background:#f3f8f6}
+.partner-section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,390px);gap:60px;align-items:end;margin-bottom:36px}
+.partner-section-head h2{margin-bottom:0}
+.partner-section-head h2 span{color:var(--teal)}
+.partner-section-head .section-side-copy{max-width:390px;margin:0 0 4px;color:var(--muted);font-size:13px;line-height:1.7}
+.partner-model-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.partner-model-grid article{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;min-height:275px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.partner-model-grid article:nth-child(4){background:var(--deep);color:#fff;border-color:var(--deep)}
+.partner-model-grid article:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.partner-model-grid span{font-size:8px;letter-spacing:.12em;color:var(--teal);font-weight:800}
+.partner-model-grid h3{font:800 23px Manrope;line-height:1.1;margin:70px 0 10px}
+.partner-model-grid p{font-size:10px;color:var(--muted);line-height:1.65;margin:0}
+.partner-model-grid article:nth-child(4) p{color:#b8ceca}
+.partner-model-grid a{margin-top:auto;padding-top:24px;color:var(--teal);font-size:10px;font-weight:800}
+.partner-page .partner-process{background:#fff}
+.partner-process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.partner-process-grid article{padding:26px;background:#fff;border:1px solid var(--line);border-radius:20px;min-height:220px}
+.partner-process-grid b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--mint);color:var(--teal);font-size:10px}
+.partner-process-grid h3{font:800 19px Manrope;line-height:1.15;margin:45px 0 9px}
+.partner-process-grid p{font-size:10px;color:var(--muted);line-height:1.65;margin:0}
+.partner-contact{background:#f3f8f6}
+.partner-form-layout{grid-template-columns:.9fr 1.1fr;gap:90px;align-items:start}
+.partner-form-copy h2{max-width:500px}
+.partner-form-copy .lead{max-width:500px}
+.partner-contact-note{margin-top:38px;padding-top:20px;border-top:1px solid var(--line);display:grid;gap:4px;max-width:360px}
+.partner-contact-note span{font:800 13px Manrope;color:var(--deep)}
+.partner-contact-note small{font-size:10px;color:var(--muted)}
+.partner-contact-note a{margin-top:8px;color:var(--teal);font-size:10px;font-weight:800}
+.partner-form{padding:32px;gap:14px}
+.form-card-heading{padding-bottom:8px}
+.form-card-heading>span{font-size:8px;letter-spacing:.14em;color:var(--teal);font-weight:800}
+.form-card-heading h3{font:800 25px Manrope;margin:8px 0 3px}
+.form-card-heading p{font-size:10px;color:var(--muted);margin:0}
+.form-two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-check{display:flex!important;align-items:flex-start;gap:6px;font-weight:500!important;color:var(--muted);font-size:9px!important;line-height:1.45}
+.form-check input{width:auto!important;margin:2px 0 0!important;padding:0!important;accent-color:var(--teal)}
+.form-success{padding:12px 14px;background:#eaf7e2;border:1px solid #cde8b5;border-radius:11px;color:#315e35;font-size:10px;font-weight:700}
+@media(max-width:950px){
+ .partner-benefit-grid,.partner-model-grid,.partner-process-grid{grid-template-columns:1fr 1fr}
+ .partner-intro,.partner-section-head{grid-template-columns:1fr;gap:18px}
+ .partner-section-head .section-side-copy{max-width:600px}
+ .partner-form-layout{grid-template-columns:1fr;gap:40px}
+}
+@media(max-width:650px){
+ .partner-page .partner-hero{min-height:570px}
+ .partner-page .partner-hero .container{padding-bottom:48px}
+ .partner-page .partner-hero h1{font-size:48px}
+ .partner-hero-proof{gap:15px;margin-top:30px}
+ .partner-benefit-grid,.partner-model-grid,.partner-process-grid,.form-two{grid-template-columns:1fr}
+ .partner-benefit-grid article{min-height:245px}
+ .partner-icon{margin-top:34px}
+ .partner-model-grid article{min-height:235px}
+ .partner-model-grid h3{margin-top:50px}
+ .partner-section-head h2{font-size:40px}
+ .partner-form{padding:24px 20px}
+}

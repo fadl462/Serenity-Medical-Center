@@ -17,10 +17,23 @@ window.addEventListener('resize',syncHeader,{passive:true});
 window.addEventListener('pageshow',syncHeader,{passive:true});
 syncHeader();
 document.querySelectorAll('.amounts button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.amounts button').forEach(x=>x.classList.remove('active'));b.classList.add('active')}));
-document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();alert('Thank you. This demo form is ready for backend integration.');}));
+document.querySelectorAll('form').forEach(f=>{ if(f.id==='partnershipForm') return; f.addEventListener('submit',e=>{e.preventDefault();alert('Thank you. This demo form is ready for backend integration.');}); });
 document.querySelectorAll('.language-switch a').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelectorAll('.language-switch a').forEach(x=>x.classList.remove('active'));a.classList.add('active');}));
 
 nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+/* Partner inquiry — polished inline confirmation */
+(function(){
+  const form=document.querySelector('#partnershipForm');
+  const success=form?.querySelector('.form-success');
+  if(!form||!success) return;
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    success.hidden=false;
+    form.querySelectorAll('input,select,textarea,button').forEach(el=>{el.disabled=true;});
+    success.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+})();
 
 /* Current-page navigation state */
 (function(){
