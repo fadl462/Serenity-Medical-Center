@@ -35,6 +35,19 @@ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classLi
   });
 })();
 
+/* Book a Visit — inline confirmation */
+(function(){
+  const form=document.querySelector('#contactBookingForm');
+  const success=form?.querySelector('.form-success');
+  if(!form||!success) return;
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    success.hidden=false;
+    form.querySelectorAll('input,select,textarea,button').forEach(el=>{el.disabled=true;});
+    success.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+})();
+
 /* Current-page navigation state */
 (function(){
   const path=(location.pathname.split('/').pop()||'index.html').toLowerCase();
