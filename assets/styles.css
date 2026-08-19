@@ -1234,6 +1234,13 @@ main{position:relative;z-index:1}
   .community-page .article-tile{transition:none!important}
 }
 
+
+/* =========================================================
+   PASS 37 — COMMUNITY SECTION RHYTHM
+   Reduce the excessive gap between the article library and
+   the personal-guidance CTA while preserving responsive breathing room.
+   ========================================================= */
+
 /* =========================================================
    PASS 36 — COMMUNITY FINAL VISUAL POLISH
    Precision spacing, hierarchy and card rhythm without changing
@@ -1297,8 +1304,11 @@ main{position:relative;z-index:1}
   margin-bottom:13px;
   line-height:1.55;
 }
+.community-page .community-library{
+  padding-bottom:72px;
+}
 .community-page .community-care-cta{
-  margin-top:82px;
+  margin-top:0;
 }
 
 @media(max-width:1100px){
@@ -1314,7 +1324,8 @@ main{position:relative;z-index:1}
   .community-page .featured-image{min-height:320px}
   .community-page .featured-copy{padding:34px}
   .community-page .article-image{height:210px}
-  .community-page .community-care-cta{margin-top:64px}
+  .community-page .community-library{padding-bottom:58px}
+  .community-page .community-care-cta{margin-top:0}
 }
 
 @media(max-width:650px){
@@ -1326,5 +1337,6 @@ main{position:relative;z-index:1}
   .community-page .featured-copy h2{font-size:34px}
   .community-page .library-heading{margin-bottom:15px}
   .community-page .article-image{height:220px}
-  .community-page .community-care-cta{margin-top:52px}
+  .community-page .community-library{padding-bottom:48px}
+  .community-page .community-care-cta{margin-top:0}
 }
