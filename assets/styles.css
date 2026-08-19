@@ -1347,7 +1347,7 @@ main{position:relative;z-index:1}
    ========================================================= */
 .gallery-page{background:#fff}
 .gallery-hero{min-height:470px;background-position:center 48%}
-.gallery-hero .container{padding-top:92px;padding-bottom:88px}
+.gallery-hero .container{padding-top:145px;padding-bottom:88px}
 .gallery-hero h1{font-size:clamp(52px,6vw,82px);max-width:820px}
 .gallery-hero p{max-width:600px}
 .gallery-hero-meta{display:flex;align-items:center;gap:12px;margin-top:28px;color:#d1dfdc;font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:800}
@@ -1412,7 +1412,7 @@ body.gallery-lock{overflow:hidden}
 }
 @media(max-width:650px){
   .gallery-hero{min-height:430px}
-  .gallery-hero .container{padding:58px 0 65px}
+  .gallery-hero .container{padding:92px 0 65px}
   .gallery-hero h1{font-size:48px}
   .gallery-hero-meta{font-size:8px;gap:8px}
   .gallery-intro{padding:70px 0 80px}
@@ -1439,7 +1439,7 @@ body.gallery-lock{overflow:hidden}
    PARTNER PAGE — PREMIUM COLLABORATION EXPERIENCE
    ========================================================= */
 .partner-page .partner-hero{min-height:590px;background-position:center 46%;align-items:center}
-.partner-page .partner-hero .container{padding-top:72px;padding-bottom:72px}
+.partner-page .partner-hero .container{padding-top:135px;padding-bottom:72px}
 .partner-page .partner-hero .eyebrow{margin-bottom:0}
 .partner-page .partner-hero h1{margin-top:16px;max-width:760px}
 .partner-page .partner-hero p{max-width:650px}
@@ -1504,7 +1504,7 @@ body.gallery-lock{overflow:hidden}
 }
 @media(max-width:650px){
  .partner-page .partner-hero{min-height:600px;align-items:center}
- .partner-page .partner-hero .container{padding-top:58px;padding-bottom:58px}
+ .partner-page .partner-hero .container{padding-top:88px;padding-bottom:58px}
  .partner-page .partner-hero h1{font-size:48px}
  .partner-hero-proof{gap:15px;margin-top:30px}
  .partner-benefit-grid,.partner-model-grid,.partner-process-grid,.form-two{grid-template-columns:1fr}
