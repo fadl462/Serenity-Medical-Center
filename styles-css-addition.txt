@@ -1,0 +1,84 @@
+
+/* Serenity — topbar language switch */
+.topbar{
+  position:relative;
+  padding-left:170px;
+  padding-right:170px;
+}
+
+.topbar-language{
+  position:absolute;
+  right:max(24px,calc((100vw - 1180px)/2));
+  top:50%;
+  transform:translateY(-50%);
+  z-index:2;
+}
+
+.topbar-language .language-switch{
+  display:flex;
+  align-items:center;
+  gap:2px;
+  padding:2px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  background:rgba(255,255,255,.07);
+}
+
+.topbar-language .language-switch a{
+  display:grid;
+  place-items:center;
+  min-width:26px;
+  height:20px;
+  padding:0 6px;
+  border-radius:999px;
+  color:#b8cfca;
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.04em;
+  transition:.2s ease;
+}
+
+.topbar-language .language-switch a:hover{
+  color:#fff;
+}
+
+.topbar-language .language-switch a.active{
+  background:#fff;
+  color:#043e3e;
+  box-shadow:0 1px 5px rgba(0,0,0,.12);
+}
+
+@media (max-width:700px){
+  .topbar{
+    padding-left:15px;
+    padding-right:105px;
+    justify-content:flex-start;
+    gap:8px;
+    font-size:8px;
+    white-space:nowrap;
+  }
+
+  .topbar span{
+    display:none;
+  }
+
+  .topbar-language{
+    right:15px;
+  }
+}
+
+@media (max-width:420px){
+  .topbar{
+    padding-right:95px;
+  }
+
+  .topbar a{
+    font-size:8px;
+  }
+
+  .topbar-language .language-switch a{
+    min-width:24px;
+    height:19px;
+    padding:0 5px;
+  }
+}

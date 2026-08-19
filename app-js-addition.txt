@@ -1,0 +1,14 @@
+
+/* Serenity — move EN/FR language switch into the top utility bar */
+(function(){
+  const topbar=document.querySelector('.topbar');
+  const languageSwitch=document.querySelector('.language-switch');
+  if(!topbar || !languageSwitch) return;
+
+  // Keep one language switch and move it out of the main navigation.
+  const holder=document.createElement('div');
+  holder.className='topbar-language';
+  holder.setAttribute('aria-label','Language');
+  holder.appendChild(languageSwitch);
+  topbar.appendChild(holder);
+})();

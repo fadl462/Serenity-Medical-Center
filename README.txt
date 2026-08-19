@@ -1,22 +1,29 @@
-SERENITY MEDICAL CENTER — ACTUAL MAP PREVIEW FIX
+SERENITY MEDICAL CENTER — LANGUAGE SWITCH TOPBAR
 
-You were correct: the previous map area was only a decorative placeholder.
-The intended design should show a real, interactive Google Maps preview.
+Requested change:
+Move the EN / FR language switch from the main navigation into the dark utility/top menu bar.
 
-I have NOT committed anything to GitHub.
+IMPORTANT:
+- Nothing has been committed to GitHub.
+- You will push the change yourself.
+- This is designed as a site-wide change because all pages already use assets/app.js and assets/styles.css.
 
-Apply these two changes to contact.html:
+Apply:
 
-1. Replace the existing:
-   <section class="map-section contact-map-section"> ... </section>
-   with contact-map-section.html from this package.
+1. Add app-js-addition.txt to the END of:
+   assets/app.js
 
-2. In the page-specific <style> block, add/replace the map styling with:
-   contact-map-css.txt
+2. Add styles-css-addition.txt to the END of:
+   assets/styles.css
 
-The result:
-- Real Google Maps preview visible directly inside the map card.
-- Existing Serenity location information remains over the map.
-- "Open in Google Maps" still opens the full Google Maps location.
-- Responsive on desktop and mobile.
-- No API key is required for this standard Google Maps embed URL.
+The JavaScript automatically relocates the existing .language-switch into
+the .topbar on every page, so you do NOT need to edit each HTML page.
+
+Result:
+- EN / FR sits in the top dark utility bar.
+- Main navigation becomes cleaner and less crowded.
+- The switch retains its active-pill styling.
+- Desktop and mobile layouts are handled.
+- Existing language-switch click behaviour remains intact because the
+  existing app.js listener runs before/after the move without changing the
+  element itself.
