@@ -1,26 +1,22 @@
-SERENITY MEDICAL CENTER — FOOTER FINAL POLISH
+SERENITY MEDICAL CENTER — ACTUAL MAP PREVIEW FIX
 
-This update is intentionally site-wide.
+You were correct: the previous map area was only a decorative placeholder.
+The intended design should show a real, interactive Google Maps preview.
 
-REPLACE:
-  assets/app.js
+I have NOT committed anything to GitHub.
 
-No HTML page changes are required because every Serenity page already loads assets/app.js.
+Apply these two changes to contact.html:
 
-What this does:
-- Replaces the old footer presentation with a premium, structured footer.
-- Adds a high-conversion action strip: Book a Visit, phone, directions and 24-hour status.
-- Improves hierarchy, spacing, typography and contrast.
-- Adds clearer Explore / Connect / Visit Us navigation.
-- Adds a dedicated phone/emergency callout.
-- Adds responsive layouts for tablet and mobile.
-- Adds subtle hover and background treatments without changing the site's core palette.
-- Keeps the existing header, forms, gallery and other JavaScript behavior intact.
+1. Replace the existing:
+   <section class="map-section contact-map-section"> ... </section>
+   with contact-map-section.html from this package.
 
-GITHUB:
-1. Extract this ZIP.
-2. Replace your existing assets/app.js with the included file.
-3. Commit and push yourself.
-4. Hard-refresh the GitHub Pages site (Ctrl+F5) to bypass cached JavaScript.
+2. In the page-specific <style> block, add/replace the map styling with:
+   contact-map-css.txt
 
-NO COMMIT HAS BEEN MADE.
+The result:
+- Real Google Maps preview visible directly inside the map card.
+- Existing Serenity location information remains over the map.
+- "Open in Google Maps" still opens the full Google Maps location.
+- Responsive on desktop and mobile.
+- No API key is required for this standard Google Maps embed URL.
