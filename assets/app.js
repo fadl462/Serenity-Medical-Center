@@ -49,7 +49,7 @@ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classLi
   const items=[...page.querySelectorAll('.gallery-item')];
   const filters=[...page.querySelectorAll('[data-gallery-filter]')];
   const empty=page.querySelector('.gallery-empty');
-  const box=page.querySelector('#galleryLightbox');
+  const box=document.querySelector('#galleryLightbox');
   const image=box?.querySelector('img');
   const title=box?.querySelector('h3');
   const desc=box?.querySelector('p');
